@@ -1,0 +1,75 @@
+scriptencoding utf-8
+
+" 配置文件框架
+" ------------
+
+" 读取本地文件所在的目录
+let $VIMPATH = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')
+
+function! s:source_rc(path, ...) abort
+  let use_global = get(a:000, 0, !has('vim_starting'))
+  let abspath = resolve(expand('~/.config/nvim/rc/' . a:path))
+  if !use_global
+    execute 'source' fnameescape(abspath)
+    return
+  endif
+
+" substitute all 'set' to 'setglobal'
+  let content = map(readfile(abspath),
+        \ 'substitute(v:val, "^\\W*\\zsset\\ze\\W", "setglobal", "")')
+" create tempfile and source the tempfile
+  let tempfile = tempname()
+  try
+    call writefile(content, tempfile)
+    execute 'source' fnameescape(tempfile)
+  finally
+    if filereadable(tempfile)
+      call delete(tempfile)
+    endif
+  endtry
+endfunction
+
+" 启动时间优化{{{
+augroup MyAutoCmd
+    autocmd!
+    autocmd CursorHold *? syntax sync minlines=300
+augroup END
+" }}}启动时间优化
+
+" --------------------------------------------------------------
+
+" 从init.vim开始{{{
+if has('vim_starting')
+  call s:source_rc('init.vim')
+endif
+" }}}从init.vim开始
+
+" 基本配置{{{
+call s:source_rc('/basic_config/function.vim')
+call s:source_rc('/basic_config/commands.vim')
+call s:source_rc('/basic_config/general.vim')
+call s:source_rc('/basic_config/mapping.vim')
+" }}}基本配置
+
+" 插件管理引擎及映射{{{
+call s:source_rc('plug.vim')                   " 插件管理器
+call s:source_rc('/themes/theme.vim')          " 主题配置
+call s:source_rc('/basic_config/allkey.vim')   " 插件按键映射
+" }}}插件管理引擎及映射
+
+" 插件配置{{{
+call s:source_rc('/plugins/lightline.vim')       " 状态栏
+call s:source_rc('/plugins/File_management.vim') " 文件树
+call s:source_rc('/plugins/ale.vim')             " 语法检查
+call s:source_rc('/plugins/coc.vim')             " 代码补全
+call s:source_rc('/plugins/little_config.vim')   " 短配置
+call s:source_rc('/plugins/fzf.vim')             " 模糊搜索
+call s:source_rc('/plugins/git.vim')             " git配置
+call s:source_rc('/plugins/ctags.vim')           " 标签浏览
+call s:source_rc('/plugins/markdown.vim')        " md配置
+" }}}插件配置
+"---------------------------------------------------------------------------
+
+set secure
+
+" vim: foldmethod=marker

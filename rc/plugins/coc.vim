@@ -1,0 +1,56 @@
+scriptencoding utf-8
+
+" if hidden not set, TextEdit might fail.
+set hidden
+" Better display for messages
+set cmdheight=1
+" always show signcolumns
+set signcolumn=yes
+" for showSignatureHelp
+"set noshowmode
+set completeopt+=noinsert,menuone,noselect
+
+" floating window
+let g:coc_force_debug = 1
+
+" To get correct comment highlight, add
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+augroup mygroup
+    autocmd!
+    " Setup formatexpr specified filetype(s).
+    autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+    " Update signature help on jump placeholder
+    autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+" ------------------------------------------------------------------
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+" Use K for show documentation in preview window
+function! s:show_documentation()
+  if &filetype == 'vim'
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+" ------------------------------------------------------------------
+" highlight text color
+autocmd ColorScheme * highlight! CocHighlightText  guibg=#054c20 ctermbg=023
+" do not underline error/info/hit lines
+autocmd ColorScheme * highlight! link CocErrorHighlight NoCocUnderline
+autocmd ColorScheme * highlight! link CocWarningHighlight NoCocUnderline
+autocmd ColorScheme * highlight! link CocInfoHighlight NoCocUnderline
+autocmd ColorScheme * highlight! link CocHintHighlight NoCocUnderline
