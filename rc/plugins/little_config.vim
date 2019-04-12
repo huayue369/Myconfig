@@ -92,6 +92,7 @@ let g:hiPairs_hl_matchPair = { 'term'    : 'underline,bold',
 " }}}Yggdroot/hiPairs
 
 " scrooloose/nerdcommenter{{{
+let g:NERDCreateDefaultMappings = 0
 let g:NERDCommentWholeLinesInVMode=1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDDefaultAlign = 'left'

@@ -115,8 +115,6 @@ set iskeyword+=-
 set updatetime=300
 " }}} updatetime
 
-
-
 " substitution {{{
 " set inccommand=split
 " substitution }}}

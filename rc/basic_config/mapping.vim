@@ -1,5 +1,9 @@
 scriptencoding utf-8
 
+" 缓冲区操作{{{
+nnoremap <M-q> :bd<CR>
+" }}}缓冲区操作
+
 " 系统寄存器粘贴复制键{{{
 nmap <leader>v "+gp
 vmap <leader>v "+gp

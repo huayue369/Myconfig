@@ -2,6 +2,11 @@ scriptencoding utf-8
 
 "按键映射
 "-----------
+" scrooloose/nerdcommenter{{{
+nmap <Leader>cs <Plug>NERDCommenterSexy
+nmap <Leader>cu <Plug>NERDCommenterUncomment
+nmap <Leader>c<space> <Plug>NERDCommenterToggle
+" }}}scrooloose/nerdcommenter
 
 " w0rp/ale{{{
 nmap [a <Plug>(ale_next_wrap)
