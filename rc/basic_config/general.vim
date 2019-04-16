@@ -7,9 +7,11 @@ scriptencoding utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 " 更好的unix兼容性
-set viewoptions=folds,options,cursor,unix,slash
+set viewoptions=folds,cursor,unix,slash
+set viewoptions-=options
 set fileformat=unix
 set fileformats=unix,dos,mac
+set sessionoptions+=globals
 " }}} encoding
 
 " 色彩支持{{{
@@ -18,7 +20,7 @@ set t_Co=256
 " }}}色彩支持
 
  "required!{{{
-filetype plugin indent on
+filetype plugin indent on 
  "}}}required!
 
 " 响应外部外部文件更改{{{
@@ -26,11 +28,11 @@ set autoread
 " }}}响应外部外部文件更改
 
 " tabs {{{
-set expandtab
+set expandtab   " 制表符换成空格
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-set cindent
+set smartindent " 缩进模式
 " }}} tabs
 
 " 窗口滚动 {{{

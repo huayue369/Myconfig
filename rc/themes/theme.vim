@@ -3,6 +3,10 @@ scriptencoding utf-8
 " Theme
 " -----
 
+" morhetz/gruvbox{{{
+"colorscheme gruvbox
+"set background=dark
+" }}}morhetz/gruvbox
 " junegunn/seoul256.vim{{{
 let g:seoul256_background = 236
 colo seoul256

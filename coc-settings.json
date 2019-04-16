@@ -1,8 +1,9 @@
 {
   // coc settting
-   "coc.preferences.formatOnType":true,
+  "coc.preferences.formatOnType":true,
   "coc.preferences.snippets.enable": true,
   "coc.preferences.snippetStatusText": "🌈",
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   // diagnostic
   "diagnostic.infoSign": "ღ",
   "diagnostic.hintSign": "ஐ",
@@ -14,12 +15,12 @@
   "diagnostic.refreshOnInsertMode": true,
   // suggest
   "suggest.triggerCompletionWait": 50,
-  "suggest.minTriggerInputLength": 2,
-  "suggest.snippetIndicator": "🌟",
-  "suggest.noselect": false,
+  "suggest.minTriggerInputLength": 2,     // 触发补全字符数
+  "suggest.snippetIndicator": "🌟",       // 代码片段标识
+  "suggest.noselect": false,              // 补全开启时选中第一项
   "suggest.detailField": "abbr",
   "suggest.maxCompleteItemCount": 20,
-  "suggest.triggerAfterInsertEnter": true,
+  "suggest.triggerAfterInsertEnter": true, // 插入模式触发自动补全  
   "suggest.detailMaxLength": 30,
   "suggest.preferCompleteThanJumpPlaceholder": false,
   // languageserver

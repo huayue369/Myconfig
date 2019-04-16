@@ -3,7 +3,9 @@ scriptencoding utf-8
 call plug#begin('~/.cache/plugged')
 
 " 主题{{{
+
 " Plug 'logico-dev/typewriter'
+"Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
 " Plug 'sainnhe/vim-color-forest-night'
 " }}}主题
@@ -23,16 +25,20 @@ Plug 'svermeulen/vim-cutlass'
 " 多光标操作
 Plug 'mg979/vim-visual-multi'
 " 快速注释文本
-Plug 'scrooloose/nerdcommenter', {
-            \'on':['<Plug>NERDCommenterSexy',
+Plug 'scrooloose/nerdcommenter', 
+            \{'on':['<Plug>NERDCommenterSexy',
             \'<Plug>NERDCommenterUncomment',
             \'<Plug>NERDCommenterToggle']}
 " 平滑滚动
 Plug 'yuttie/comfortable-motion.vim'
-" 自动添加视图的创建恢复缓冲区
+" 自动解决粘贴文本格式乱问题
+Plug 'ConradIrwin/vim-bracketed-paste'
+" 每当编辑缓冲区时，vim-stay都会添加自动视图会话创建和恢复
 Plug 'zhimsel/vim-stay'
 " 仅在折叠时更新折叠
 Plug 'Konfekt/FastFold'
+" 增强文本操作
+Plug 'wellle/targets.vim'
 " 符号对增删该
 Plug 'tpope/vim-surround'
 " .重复插件操作
@@ -49,8 +55,8 @@ Plug 'anschnapp/move-less'
 " 代码块可视移动
 Plug 'valsorym/vim-move'
 " 快速移动光标
-Plug 'easymotion/vim-easymotion', {
-            \'on':['<Plug>(easymotion-sn)',
+Plug 'easymotion/vim-easymotion', 
+            \{'on':['<Plug>(easymotion-sn)',
             \'<Plug>(easymotion-tn)',
             \'<Plug>(easymotion-bd-tl)',
             \'<Plug>(easymotion-overwin-f)',
@@ -83,10 +89,10 @@ Plug 'junegunn/vim-easy-align', {'on':'<plug>(EasyAlign)'}
 
 " neovim界面优化{{{
 
-"" 轻量可配置的状态栏
-"Plug 'itchyny/lightline.vim'
-"" brfferline标签栏
-"Plug 'mengelbrecht/lightline-bufferline'
+" 轻量可配置的状态栏
+Plug 'itchyny/lightline.vim'
+" brfferline标签栏
+Plug 'mengelbrecht/lightline-bufferline'
 " 启动界面
 Plug 'mhinz/vim-startify'
 " 提供图标美化
@@ -119,7 +125,7 @@ Plug 'honza/vim-snippets',      {'for':'go'}
 " 代码格式化
 Plug 'sbdchd/neoformat',        {'on':'Neoformat'}
 " 语法检查
-Plug 'w0rp/ale',                {'for':'go'}
+Plug 'neomake/neomake',         {'for':'go'}
 " golang支持
 Plug 'zchee/nvim-go',           {'do': 'make','for':'go'}
 " 各种语言支持

@@ -2,10 +2,14 @@ scriptencoding utf-8
 
 "按键映射
 "-----------
+
 " scrooloose/nerdcommenter{{{
 nmap <Leader>cs <Plug>NERDCommenterSexy
 nmap <Leader>cu <Plug>NERDCommenterUncomment
 nmap <Leader>c<space> <Plug>NERDCommenterToggle
+vmap <Leader>cs <Plug>NERDCommenterSexy
+vmap <Leader>cu <Plug>NERDCommenterUncomment
+vmap <Leader>c<space> <Plug>NERDCommenterToggle
 " }}}scrooloose/nerdcommenter
 
 " w0rp/ale{{{
@@ -52,9 +56,9 @@ nnoremap <leader>ti :Vista!!<CR>
 "}}}liuchengxu/vista.vim
 
 "Konfekt/FastFold{{{
-xnoremap zi :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zv[z<cr>
-xnoremap zc :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zV[z<cr><Paste>
-nnoremap zuz <Plug>(FastFoldUpdate)
+nmap zuz <Plug>(FastFoldUpdate)
+xnoremap iz :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zv[z<cr>
+xnoremap az :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zV[z<cr>
 "}}}Konfekt/FastFold
 
 "junegunn/vim-easy-align{{{
@@ -86,7 +90,7 @@ nnoremap <silent> <leader>r :Rg<CR>
 "}}}junegunn/fzf.vim
 
 " anschnapp/move-less{{{
-noremap , :call MoveLessMode()<cr>
+noremap ' :call MoveLessMode()<cr> 
 " }}}anschnapp/move-less
 
 "easymotion/vim-easymotion{{{

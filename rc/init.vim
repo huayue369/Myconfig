@@ -1,4 +1,3 @@
-
 scriptencoding utf-8
 
 " 全局映射{{{
@@ -15,11 +14,8 @@ xnoremap ,        <Nop>
 nnoremap ;        <Nop>
 xnoremap ;        <Nop>
 nnoremap K        <Nop>
+nnoremap F        <Nop>
 " }}}全局映射
-
-" 让neovim透明{{{
-highlight Normal guibg=NONE ctermbg=None
-" }}}让neovim透明
 
 " 语言模块配置{{{
 " Skip the check of neovim module

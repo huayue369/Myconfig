@@ -7,9 +7,11 @@ set cmdheight=1
 " always show signcolumns
 set signcolumn=yes
 " for showSignatureHelp
+let b:coc_current_function = 1
+" 让 session 支持globals 变量
+"let g:WorkspaceFolders = 1
 "set noshowmode
 set completeopt+=noinsert,menuone,noselect
-
 " floating window
 let g:coc_force_debug = 1
 
