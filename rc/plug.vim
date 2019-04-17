@@ -33,8 +33,6 @@ Plug 'scrooloose/nerdcommenter',
 Plug 'yuttie/comfortable-motion.vim'
 " 自动解决粘贴文本格式乱问题
 Plug 'ConradIrwin/vim-bracketed-paste'
-" 每当编辑缓冲区时，vim-stay都会添加自动视图会话创建和恢复
-Plug 'zhimsel/vim-stay'
 " 仅在折叠时更新折叠
 Plug 'Konfekt/FastFold'
 " 增强文本操作
