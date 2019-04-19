@@ -15,10 +15,10 @@ set completeopt+=noinsert,menuone,noselect
 " floating window
 let g:coc_force_debug = 1
 
-" To get correct comment highlight, add
+" 获得正确的注释高亮显示
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
-" Highlight symbol under cursor on CursorHold
+" 在光标保持器上突出显示光标下的符号
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 augroup mygroup
@@ -28,6 +28,14 @@ augroup mygroup
     " Update signature help on jump placeholder
     autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
+" 自动启动语法代码完成
+if has("autocmd") && exists("+omnifunc")
+    autocmd Filetype *
+        \	if &omnifunc == "" |
+        \		setlocal omnifunc=syntaxcomplete#Complete |
+        \	endif
+endif
+
 " ------------------------------------------------------------------
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.

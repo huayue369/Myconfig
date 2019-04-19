@@ -3,10 +3,6 @@ scriptencoding utf-8
 " 插件短配置
 " -----------
 
-" tpope/vim-repeat{{{
-"silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
-" }}}tpope/vim-repeat
-
 " sbdchd/neoformat{{{
 let b:neoformat_basic_format_align = 1 " 启用对齐
 let g:neoformat_try_formatprg = 1      " 使用formatprg作为格式化程序
@@ -92,7 +88,6 @@ let g:hiPairs_hl_matchPair = { 'term'    : 'underline,bold',
 " }}}Yggdroot/hiPairs
 
 " scrooloose/nerdcommenter{{{
-let g:NERDCreateDefaultMappings = 0
 let g:NERDCommentWholeLinesInVMode=1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDDefaultAlign = 'left'

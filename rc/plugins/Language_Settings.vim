@@ -4,10 +4,10 @@ scriptencoding utf-8
 
 " vim-go{{{i
 let g:go_def_mode='gopls'
-"let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "goimports"
 let g:go_doc_keywordprg_enabled = 0 " 禁用默认映射K
-let g:go_auto_sameids = 1 " 高亮显示光标下的所有使用标识符
-let g:go_auto_type_info = 1 " 显示单词类型信息
+let g:go_auto_sameids = 1           " 高亮显示光标下的所有使用标识符
+let g:go_auto_type_info = 1         " 显示单词类型信息
 " 强化Vim golang语法高亮功能
 
 let g:go_highlight_array_whitespace_error = 1    " 突出“[]”后空白
@@ -27,7 +27,8 @@ let g:go_highlight_format_strings = 1            " 突出printf-style字符串�
 let g:go_highlight_variable_declarations = 1     " 强调在变量声明变量名
 let g:go_highlight_variable_assignments = 1      " 突出显示变量名
 " gocode补全
-let g:go_gocode_propose_source = 1 " gocode使用源文件,不是二进制包补全建议
+let g:go_gocode_propose_builtins = 1 " 禁用gocode补全
+"let g:go_gocode_propose_source = 1  " gocode使用源文件,不是二进制包补全建议
 " 开启函数常量自动完成
 let g:go_gocode_propose_builtins = 1
 " 定义工具用于|:GoDecls|

@@ -13,7 +13,6 @@ nnoremap ,        <Nop>
 xnoremap ,        <Nop>
 nnoremap ;        <Nop>
 xnoremap ;        <Nop>
-nnoremap K        <Nop>
 nnoremap F        <Nop>
 " }}}全局映射
 
@@ -46,14 +45,6 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
 " 状态栏设置{{{
 set statusline=\ 🚗\-\{%n}-\ \🌺\🌺\%F\[%M]\🌺\ 💐\%y\💐\ \%r\ %=\ \%L\|\%p\%%\🌹\%{&ff}\🌼\[%l/%c]\🌹
 " }}}状态栏设置
-
-augroup UserNeo
-  autocmd!
-" delete the buffer when exit terminal
-  autocmd TermClose * bd!
-" for autoread
-  autocmd FocusGained * :checktime
-augroup END
 
 " 禁用neovim自带插件{{{
 let loaded_matchparen          = 1

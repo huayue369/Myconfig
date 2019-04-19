@@ -57,7 +57,6 @@ nnoremap <leader>ti :Vista!!<CR>
 
 "Konfekt/FastFold{{{
 nmap zuz <Plug>(FastFoldUpdate)
-noremap zi :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zv[z<cr>
 "}}}Konfekt/FastFold
 
 "junegunn/vim-easy-align{{{
@@ -112,12 +111,8 @@ nnoremap <silent> <localleader>a  :<C-u>CocList diagnostics<cr>
 nnoremap <silent> <localleader>e  :<C-u>CocList extensions<cr>
 " Show commands
 nnoremap <silent> <localleader>c  :<C-u>CocList commands<cr>
-" Find symbol of current document
-nnoremap <silent> <localleader>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
 nnoremap <silent> <localleader>s  :<C-u>CocList -I symbols<cr>
-" Do default action for next item.
-nnoremap <silent> <localleader>j  :<C-u>CocNext<CR>
 " Resume latest coc list
-nnoremap <silent> <localleader>p  :<C-u>CocListResume<CR>
+nnoremap <silent> <localleader>m  :<C-u>CocListResume<CR>
 "}}}neoclide/coc.nvim

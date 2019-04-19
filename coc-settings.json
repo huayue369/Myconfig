@@ -1,10 +1,10 @@
 {
-  // coc settting
+  // coc preferences(首选项)
   "coc.preferences.formatOnType":true,
-  "coc.preferences.snippets.enable": true,
-  "coc.preferences.snippetStatusText": "🌈",
-  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
-  // diagnostic
+  "coc.preferences.snippets.enable": true, // 启用片段
+  "coc.preferences.snippetStatusText": "🌈", // 片段文本状态
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true, 
+  // diagnostic(诊断)
   "diagnostic.infoSign": "ღ",
   "diagnostic.hintSign": "ஐ",
   "diagnostic.warningSign": "⚠",
@@ -12,7 +12,7 @@
   "diagnostic.enable": true,
   "diagnostic.signOffset": 100,
   "diagnostic.highlightOffset": 100,
-  "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.refreshOnInsertMode": true, // 插入模式刷新
   // suggest
   "suggest.triggerCompletionWait": 50,
   "suggest.minTriggerInputLength": 2,     // 触发补全字符数
@@ -87,5 +87,4 @@
   }
   
     }
-  
   //linters 

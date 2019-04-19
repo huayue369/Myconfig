@@ -5,10 +5,17 @@ call plug#begin('~/.cache/plugged')
 " 主题{{{
 
 " Plug 'logico-dev/typewriter'
-"Plug 'morhetz/gruvbox'
 Plug 'junegunn/seoul256.vim'
-" Plug 'sainnhe/vim-color-forest-night'
+"Plug 'KKPMW/sacredforest-vim'
 " }}}主题
+
+" neovim界面优化{{{
+
+" 启动界面
+Plug 'mhinz/vim-startify'
+" 提供图标美化
+Plug 'ryanoasis/vim-devicons'
+" }}}neovim界面优化
 
 " 操作强化{{{
 
@@ -82,18 +89,6 @@ Plug 'junegunn/fzf.vim'
 " 代码对齐
 Plug 'junegunn/vim-easy-align', {'on':'<plug>(EasyAlign)'}
 " }}}junegunn大神套装
-
-" neovim界面优化{{{
-
-" 轻量可配置的状态栏
-"Plug 'itchyny/lightline.vim'
-"" brfferline标签栏
-"Plug 'mengelbrecht/lightline-bufferline'
-" 启动界面
-Plug 'mhinz/vim-startify'
-" 提供图标美化
-Plug 'ryanoasis/vim-devicons'
-" }}}neovim界面优化
 
 " 项目文件浏览 {{{
 
