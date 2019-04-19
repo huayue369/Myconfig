@@ -3,11 +3,6 @@ scriptencoding utf-8
 " 插件短配置
 " -----------
 
-" iamcco/dict.vim{{{
-let g:api_key = "6ccfd4b6339d5621"
-let g:keyfrom = "yU9DviQ4Rgxhj2mMe8r50VH8Rdzy6GQ1"
-" }}}iamcco/dict.vim
-
 " tpope/vim-repeat{{{
 "silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " }}}tpope/vim-repeat

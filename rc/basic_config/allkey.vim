@@ -3,13 +3,6 @@ scriptencoding utf-8
 "按键映射
 "-----------
 
-" iamcco/dict.vim{{{
-nmap <silent> <localleader>d <Plug>DictSearch
-vmap <silent> <localleader>d <Plug>DictVSearch
-nmap <silent> <localleader>w <Plug>DictWSearch
-vmap <silent> <localleader>w <Plug>DictWVSearch
-" }}}iamcco/dict.vim
-
 " scrooloose/nerdcommenter{{{
 nmap <Leader>cs <Plug>NERDCommenterSexy
 nmap <Leader>cu <Plug>NERDCommenterUncomment

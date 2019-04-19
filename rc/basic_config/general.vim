@@ -43,7 +43,7 @@ set splitright
 
 "基本{{{
 " 允许光标超出最后一个字符
-set virtualedit=onemore
+"set virtualedit=onemore
 set shada=!,'100,<50,s10
 set relativenumber
 set number
@@ -78,6 +78,7 @@ set splitbelow splitright
 set guioptions-=e
 set showtabline=2
 set hidden
+set switchbuf=useopen,usetab,newtab
 " }}} buffer
 
 " wildmenu {{{

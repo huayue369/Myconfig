@@ -43,12 +43,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 " }}}操作强化
 
-" 划翻译
-Plug 'iamcco/dict.vim',
-            \{'on':['<Plug>DictSearch',
-            \'<Plug>DictVSearch',
-            \'<Plug>DictWSearch',
-            \'<Plug>DictWVSearch']}
 " Dish文档支持
 Plug 'rizzatti/dash.vim',       {'on':'Dish'}
 
@@ -94,9 +88,9 @@ Plug 'junegunn/vim-easy-align', {'on':'<plug>(EasyAlign)'}
 " neovim界面优化{{{
 
 " 轻量可配置的状态栏
-Plug 'itchyny/lightline.vim'
-" brfferline标签栏
-Plug 'mengelbrecht/lightline-bufferline'
+"Plug 'itchyny/lightline.vim'
+"" brfferline标签栏
+"Plug 'mengelbrecht/lightline-bufferline'
 " 启动界面
 Plug 'mhinz/vim-startify'
 " 提供图标美化
