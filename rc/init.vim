@@ -6,7 +6,7 @@ scriptencoding utf-8
 let g:mapleader="\<Space>"
 let g:maplocalleader=';'
 
-" Release keymappings prefixes, evict entirely for use of plug-ins.
+" 禁用neovim默认按键映射
 nnoremap <Space>  <Nop>
 xnoremap <Space>  <Nop>
 nnoremap ,        <Nop>
@@ -18,10 +18,10 @@ nnoremap F        <Nop>
 " }}}全局映射
 
 " 语言模块配置{{{
-" Skip the check of neovim module
+" 禁止neovim启动时开启模块检查
 let g:python3_host_skip_check = 1
 let g:python_host_skip_check = 1
-" Path to python interpreter for neovim
+" 显示的指定python模块位置，启动速度更快
 let g:python3_host_prog  = '/usr/local/bin/python3'
 let g:python_host_prog  = '/usr/local/bin/python'
 " ruby支持
@@ -55,7 +55,7 @@ augroup UserNeo
   autocmd FocusGained * :checktime
 augroup END
 
-" Disable default plugins{{{
+" 禁用neovim自带插件{{{
 let loaded_matchparen          = 1
 let g:loaded_2html_plugin      = 1
 let g:loaded_logiPat           = 1
@@ -74,4 +74,4 @@ let g:loaded_tarPlugin         = 1
 let g:loaded_tutor_mode_plugin = 1
 let g:loaded_vimballPlugin     = 1
 let g:loaded_zipPlugin         = 1
-" }}}Disable default plugins
+" }}}禁用neovim自带插件

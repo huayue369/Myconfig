@@ -43,6 +43,12 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 " }}}操作强化
 
+" 划翻译
+Plug 'iamcco/dict.vim',
+            \{'on':['<Plug>DictSearch',
+            \'<Plug>DictVSearch',
+            \'<Plug>DictWSearch',
+            \'<Plug>DictWVSearch']}
 " Dish文档支持
 Plug 'rizzatti/dash.vim',       {'on':'Dish'}
 
@@ -125,7 +131,7 @@ Plug 'sbdchd/neoformat',        {'on':'Neoformat'}
 " 语法检查
 Plug 'neomake/neomake',         {'for':'go'}
 " golang支持
-Plug 'zchee/nvim-go',           {'do': 'make','for':'go'}
+Plug 'fatih/vim-go',            {'for':'go'}
 " 各种语言支持
 Plug 'sheerun/vim-polyglot',    {'for':['go','py']}
 " md语法加强

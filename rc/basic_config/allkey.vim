@@ -3,6 +3,13 @@ scriptencoding utf-8
 "按键映射
 "-----------
 
+" iamcco/dict.vim{{{
+nmap <silent> <localleader>d <Plug>DictSearch
+vmap <silent> <localleader>d <Plug>DictVSearch
+nmap <silent> <localleader>w <Plug>DictWSearch
+vmap <silent> <localleader>w <Plug>DictWVSearch
+" }}}iamcco/dict.vim
+
 " scrooloose/nerdcommenter{{{
 nmap <Leader>cs <Plug>NERDCommenterSexy
 nmap <Leader>cu <Plug>NERDCommenterUncomment
@@ -57,8 +64,7 @@ nnoremap <leader>ti :Vista!!<CR>
 
 "Konfekt/FastFold{{{
 nmap zuz <Plug>(FastFoldUpdate)
-xnoremap iz :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zv[z<cr>
-xnoremap az :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zV[z<cr>
+noremap zi :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zv[z<cr>
 "}}}Konfekt/FastFold
 
 "junegunn/vim-easy-align{{{
@@ -90,7 +96,7 @@ nnoremap <silent> <leader>r :Rg<CR>
 "}}}junegunn/fzf.vim
 
 " anschnapp/move-less{{{
-noremap ' :call MoveLessMode()<cr> 
+noremap <leader>z :call MoveLessMode()<cr> 
 " }}}anschnapp/move-less
 
 "easymotion/vim-easymotion{{{
