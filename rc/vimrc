@@ -46,7 +46,7 @@ endif
 
 " 基本配置{{{
 call s:source_rc('/basic_config/function.vim')
-call s:source_rc('/basic_config/commands.vim')
+"call s:source_rc('/basic_config/commands.vim')
 call s:source_rc('/basic_config/general.vim')
 call s:source_rc('/basic_config/mapping.vim')
 " }}}基本配置
@@ -58,6 +58,7 @@ call s:source_rc('/basic_config/allkey.vim')   " 插件按键映射
 " }}}插件管理引擎及映射
 
 " 插件配置{{{
+call s:source_rc('/plugins/Language_Settings.vim')   " 编程语言设置
 "call s:source_rc('/plugins/lightline.vim')       " 状态栏
 call s:source_rc('/plugins/File_management.vim') " 文件树
 call s:source_rc('/plugins/neomake.vim')         " 语法检查

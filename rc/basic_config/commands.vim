@@ -1,4 +1,3 @@
-
 scriptencoding utf-8
 
 " Find out to which highlight-group a particular keyword/symbol belongs
