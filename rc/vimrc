@@ -46,7 +46,7 @@ endif
 
 " 基本配置{{{
 call s:source_rc('/basic_config/function.vim')
-"call s:source_rc('/basic_config/commands.vim')
+call s:source_rc('/basic_config/commands.vim')
 call s:source_rc('/basic_config/general.vim')
 call s:source_rc('/basic_config/mapping.vim')
 " }}}基本配置

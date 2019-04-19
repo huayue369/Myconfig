@@ -48,8 +48,6 @@ Plug 'rizzatti/dash.vim',       {'on':'Dish'}
 
 " 快速移动{{{
 
-" 小屏幕福音，折叠代码
-Plug 'anschnapp/move-less'
 " 代码块可视移动
 Plug 'valsorym/vim-move'
 " 快速移动光标

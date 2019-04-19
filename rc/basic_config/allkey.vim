@@ -88,10 +88,6 @@ nnoremap <silent> <leader>h :History<CR>
 nnoremap <silent> <leader>r :Rg<CR>
 "}}}junegunn/fzf.vim
 
-" anschnapp/move-less{{{
-noremap <leader>z :call MoveLessMode()<cr> 
-" }}}anschnapp/move-less
-
 "easymotion/vim-easymotion{{{
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
