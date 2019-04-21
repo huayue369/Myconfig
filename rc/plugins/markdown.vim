@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 "markdown-preview{{{
 let g:mkdp_auto_start = 1       " 自动打开预览窗口

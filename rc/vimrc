@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 " 配置文件框架
 " ------------
@@ -56,6 +55,11 @@ call s:source_rc('plug.vim')                   " 插件管理器
 call s:source_rc('/themes/theme.vim')          " 主题配置
 call s:source_rc('/basic_config/allkey.vim')   " 插件按键映射
 " }}}插件管理引擎及映射
+
+"开启文件检测功能{{{
+syntax enable
+filetype plugin indent on 
+"}}}开启文件检测功能
 
 " 插件配置{{{
 call s:source_rc('/plugins/Language_Settings.vim') " 编程语言设置

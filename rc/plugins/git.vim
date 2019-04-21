@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 "let g:gitp_delete_top_sign = '▤'
 "let g:gitp_delete_bottom_sign = '▤'

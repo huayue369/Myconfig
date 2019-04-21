@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 " 插件短配置
 " -----------

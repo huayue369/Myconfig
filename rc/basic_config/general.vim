@@ -1,6 +1,8 @@
-scriptencoding utf-8
 
-" encoding {{{
+"基本
+"----
+
+" encoding(编码){{{
 set inccommand=nosplit
 set encoding=utf-8
 scriptencoding utf-8
@@ -12,7 +14,7 @@ set viewoptions-=options
 set fileformat=unix
 set fileformats=unix,dos,mac
 set sessionoptions+=globals
-" }}} encoding
+" }}} encoding（编码）
 
 " 代码折叠{{{
 set foldenable 
@@ -20,14 +22,9 @@ set foldmethod=manual
 set foldlevelstart=99
 " }}}代码折叠
 
-" 色彩支持{{{
+" 真色彩支持{{{
 set termguicolors
-set t_Co=256
-" }}}色彩支持
-
- "required!{{{
-filetype plugin indent on 
- "}}}required!
+" }}}真色彩支持
 
 " 响应外部外部文件更改{{{
 set autoread
@@ -43,24 +40,17 @@ set smartindent " 缩进模式
 
 " 窗口滚动 {{{
 set winminheight=0
-set scrolloff=4
+set scrolloff=4  " 距离顶部和底部为5行
 set splitright
 " }}} 窗口滚动
 
 "基本{{{
-" 允许光标超出最后一个字符
-set virtualedit=onemore
-set shada=!,'100,<50,s10
-set relativenumber
-set number
-set noswapfile
+set virtualedit=onemore  " 允许光标超出最后一个字符
+set shada=!,'100,<50,s10 " 防止neovim向shada写入过多代码拖慢启动速度
+set relativenumber       " 相对行
+set noswapfile           " 不产生交换文件
 set confirm
 "}}}基本
-
-" 高亮当前行和列{{{
-autocmd InsertLeave,WinEnter * set cursorline
-autocmd InsertEnter,WinLeave * set nocursorline
-"}}}高亮当前行和列
 
 " mouse {{{
 set mouse+=a
@@ -81,7 +71,6 @@ set wildoptions=pum
 
 " buffer {{{
 set splitbelow splitright
-set guioptions-=e
 set showtabline=2
 set hidden
 set switchbuf=useopen,usetab,newtab
@@ -102,7 +91,6 @@ set laststatus=2
 " }}} 状态栏
 
 " match {{{
-filetype indent on
 set showmatch
 set smartcase
 set ignorecase

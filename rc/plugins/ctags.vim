@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 "vista配置{{{
 "

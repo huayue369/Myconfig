@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 " if hidden not set, TextEdit might fail.
 set hidden

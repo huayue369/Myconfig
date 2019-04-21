@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 "按键映射
 "-----------
@@ -74,7 +73,7 @@ nnoremap <leader>tu :UndotreeToggle<CR>
 
 "junegunn/fzf.vim{{{
 " 搜索所有命令
-nnoremap <silent> <Leader>m :Commands<CR>
+nnoremap <silent> <Leader>a :Commands<CR>
 " 搜索当前目录所有文件
 nnoremap <silent> <Leader>f :Files<CR>
 " 搜索当前所有bufer

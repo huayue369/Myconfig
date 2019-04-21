@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 " 全局映射{{{
 
@@ -17,12 +16,16 @@ nnoremap F        <Nop>
 " }}}全局映射
 
 " 语言模块配置{{{
-" 禁止neovim启动时开启模块检查
+" 禁止neovim启动时进行语言模块检查
 let g:python3_host_skip_check = 1
-let g:python_host_skip_check = 1
-" 显示的指定python模块位置，启动速度更快
+let g:ruby_host_skip_check = 1
+let g:node_host_skip_check = 1
+"let g:python_host_skip_check = 1
+" 显式的指定语言模块位置，启动速度更快
 let g:python3_host_prog  = '/usr/local/bin/python3'
-let g:python_host_prog  = '/usr/local/bin/python'
+"let g:python_host_prog  = '/usr/local/bin/python'
+" 禁用对python2的支持
+let g:loaded_python_provider = 1 
 " ruby支持
 let g:ruby_host_prog = '/Users/lijia/.gem/ruby/2.6.0/bin/neovim-ruby-host'
 " node.js支持
@@ -43,8 +46,16 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
 " }}}光标闪烁✨️
 
 " 状态栏设置{{{
-set statusline=\ 🚗\-\{%n}-\ \🌺\🌺\%F\[%M]\🌺\ 💐\%y\💐\ \%r\ %=\ \%L\|\%p\%%\🌹\%{&ff}\🌼\[%l/%c]\🌹
+set statusline=\ 🌈️\-\{%n}-\ \🌺\🌺\%F\[%M]\🌺\ 💐\%y\💐\ \%r\ %=\ \%L\|\%p\%%\🌹\%{&ff}\🌼\[%l:%c]\🌹
 " }}}状态栏设置
+
+augroup UserNeo
+  autocmd!
+" delete the buffer when exit terminal
+  autocmd TermClose * bd!
+" for autoread
+  autocmd FocusGained * :checktime
+augroup END
 
 " 禁用neovim自带插件{{{
 let loaded_matchparen          = 1

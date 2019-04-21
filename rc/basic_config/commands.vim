@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 " Find out to which highlight-group a particular keyword/symbol belongs
 command! Wcolor echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") .

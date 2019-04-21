@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 " TAB Brffer操作{{{
 nnoremap <A-q> :bd<CR>
@@ -15,6 +14,10 @@ noremap <silent><leader>8 :tabn 8<cr>
 noremap <silent><leader>9 :tabn 9<cr>
 noremap <silent><leader>0 :tabn 10<cr>
 " }}}TAB Brffer操作
+
+" mark标签预览{{{
+nnoremap <leader>m :marks<cr>
+" }}}mark标签预览
 
 " 系统寄存器粘贴复制键{{{
 nmap <leader>v "+gp
@@ -68,13 +71,6 @@ vnoremap > >gv
 " list all lines with the word under the cursor {{{
 nmap <Leader><Leader>f [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 " }}} list all lines with the word under the cursor
-
-" move in split windows {{{
-nmap <C-j> <C-W>j
-nmap <C-k> <C-W>k
-nmap <C-h> <C-W>h
-nmap <C-l> <C-W>l
-" }}} move in split windows
 
 " select all {{{
 map <Leader>sa ggVG

@@ -1,4 +1,3 @@
-scriptencoding utf-8
 
 call plug#begin('~/.cache/plugged')
 
@@ -68,8 +67,6 @@ Plug 'easymotion/vim-easymotion',
 
 " git{{{
 
-" git功能绑定
-Plug 'lambdalisue/gina.vim',    {'on':['Gina status','Gina commit']}
 " iamcco插件依赖
 Plug 'iamcco/sran.nvim',        {'do': { -> sran#util#install() } }
 " git-diff改动标记
