@@ -11,11 +11,6 @@ vmap <Leader>cu <Plug>NERDCommenterUncomment
 vmap <Leader>c<space> <Plug>NERDCommenterToggle
 " }}}scrooloose/nerdcommenter
 
-" w0rp/ale{{{
-nmap [a <Plug>(ale_next_wrap)
-nmap ]a <Plug>(ale_previous_wrap)
-" }}}w0rp/ale
-
 " junegunn/goyo.vim
 noremap <silent> <leader>gl :Goyo<CR>
 " junegunn/goyo.vim
@@ -29,8 +24,7 @@ noremap <silent> <leader>tl :botright Ttoggle<CR>
 " }}}kassio/neoterm
 
 "justinmk/vim-dirvish{{{
-nnoremap <silent> <Leader>e :Fila -drawer -toggle<CR>
-nnoremap <silent> <Leader>te :<C-u>Fila<CR>
+nnoremap <silent> <Leader>e :Dirvish<cr>
 "}}}justinmk/vim-dirvish
 
 "svermeulen/vim-cutlass{{{

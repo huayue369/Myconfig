@@ -1,28 +1,24 @@
 
 " TAB Brffer操作{{{
-nnoremap <A-q> :bd<CR>
-noremap <silent><tab>e :tabnew<cr>
-noremap <silent><tab>q :tabclose<cr>
-noremap <silent><leader>1 :tabn 1<cr>
-noremap <silent><leader>2 :tabn 2<cr>
-noremap <silent><leader>3 :tabn 3<cr>
-noremap <silent><leader>4 :tabn 4<cr>
-noremap <silent><leader>5 :tabn 5<cr>
-noremap <silent><leader>6 :tabn 6<cr>
-noremap <silent><leader>7 :tabn 7<cr>
-noremap <silent><leader>8 :tabn 8<cr>
-noremap <silent><leader>9 :tabn 9<cr>
-noremap <silent><leader>0 :tabn 10<cr>
+noremap <Tab> :bn<CR>
+noremap <S-Tab> :bp<CR>
+noremap <Leader><Tab> :Bw<CR>
+noremap <Leader><S-Tab> :Bonly!<CR>
+noremap <C-tab> :tabnew split<CR>
 " }}}TAB Brffer操作
+
+" 切换换到当前文件目录{{{
+nnoremap <silent> <leader>. :cd %:p:h<CR>
+" }}}切换换到当前文件目录
 
 " mark标签预览{{{
 nnoremap <leader>m :marks<cr>
 " }}}mark标签预览
 
 " 系统寄存器粘贴复制键{{{
-nmap <leader>v "+gp
-vmap <leader>v "+gp
-vmap <leader>y "+y
+nmap <A-v> "+gp
+vmap <A-v> "+gp
+vmap <A-y> "+y
 " }}}系统寄存器粘贴复制键
 
 " esc优化{{{
@@ -43,13 +39,6 @@ nnoremap <leader>- :sp<CR>
 nnoremap <expr> n  'Nn'[v:searchforward]
 nnoremap <expr> N  'nN'[v:searchforward]
 " }}}让N/n更简单好用
-
-" 智能行移动{{{
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
-" }}}智能行移动
 
 " <,>开关折叠{{{
 nnoremap <cr> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>

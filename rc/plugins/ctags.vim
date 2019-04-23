@@ -1,10 +1,10 @@
 
 "vista配置{{{
 "
+"在状态栏显示最近的函数和方法 
 function! NearestMethodOrFunction() abort
   return get(b:, 'vista_nearest_method_or_function', '')
 endfunction
-set statusline+=%{NearestMethodOrFunction()}
 " 启用悬浮窗预览
 let g:vista_echo_cursor_strategy ='floating_win'
 " 侧边栏宽度.
@@ -19,16 +19,20 @@ let g:vista_close_on_jump = 0
 let g:vista_stay_on_open = 1
 " 跳转到标记后闪烁光标2次，间隔100ms.
 let g:vista_blink = [2, 100]
+" 图标美化
+let g:vista#renderer#enable_icon = 1
+let g:vista#renderer#icons = {
+\   "function": "\uf30b",
+\   "variable": "\uf5c0",
+\  }
 " 展示样式
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 " Executive used when opening vista sidebar without specifying it.
 " Avaliable: 'coc', 'ctags'. 'ctags' by default.
 " 优先选择lsp作为标签来源，其次ctags
-let g:vista_cpp_executive = 'vim_lsp'
+"let g:vista_cpp_executive = 'vim_lsp'
 let g:vista_default_executive = 'ctags'
-" To enable fzf's preview window set g:vista_fzf_preview.
-" The elements of g:vista_fzf_preview will be passed as arguments to fzf#vim#with_preview()
-" For example:
+" 启用fzf的预览窗口
 let g:vista_fzf_preview = ['right:50%']
 let g:vista_finder_alternative_executives = ['coc']
 "}}}vista配置
@@ -36,7 +40,7 @@ let g:vista_finder_alternative_executives = ['coc']
 "gutentags配置{{{
 
 " 在状态行显示ctags更新情况
-set statusline+=%{gutentags#statusline()}
+"set statusline+=%{gutentags#statusline()}
 " 允许gutentags打开高级命令和选项"
 let g:gutentags_define_advanced_commands = 1
 " GTAGSLABEL 告诉 gtags 默认 C/C++/Java 等六种原生支持的代码直接使用 gtags

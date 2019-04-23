@@ -33,6 +33,17 @@ noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
 noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 " }}}comfortable-motion
 
+" bagrat/vim-buffet{{{
+function! g:BuffetSetCustomColors()
+    hi! BuffetTab cterm=NONE ctermbg=5 ctermfg=8 guibg=#FF6A6A guifg=#000000
+    hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#EEAD0E guifg=#000000
+    hi! BuffetActiveBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#EEAD0E guifg=#000000
+    hi!  BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
+   endfunction
+let g:buffet_tab_icon = "\uf00a"
+let g:buffet_use_devicons = 1
+" }}}bagrat/vim-buffet
+
 " mg979/vim-visual-multi{{{
 let g:VM_default_mappings = 0
 let g:VM_cmdheight = 3

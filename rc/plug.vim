@@ -10,10 +10,12 @@ Plug 'junegunn/seoul256.vim'
 
 " neovim界面优化{{{
 
-" 启动界面
-Plug 'mhinz/vim-startify'
 " 提供图标美化
 Plug 'ryanoasis/vim-devicons'
+" 启动界面
+Plug 'mhinz/vim-startify'
+" tabline插件
+Plug 'bagrat/vim-buffet'
 " }}}neovim界面优化
 
 " 操作强化{{{
@@ -55,7 +57,7 @@ Plug 'rizzatti/dash.vim',       {'on':'Dish'}
 " 快速移动{{{
 
 " 代码块可视移动
-Plug 'valsorym/vim-move'
+Plug 'matze/vim-move'
 " 快速移动光标
 Plug 'easymotion/vim-easymotion', 
             \{'on':['<Plug>(easymotion-sn)',
@@ -96,8 +98,7 @@ Plug 'liuchengxu/vista.vim',    {'on':'Vista!!'}
 " 文件更改历史浏览
 Plug 'mbbill/undotree',         {'on':'UndotreeToggle'}
 " 文件树浏览
-Plug 'lambdalisue/fila.vim'
-            \,{'on':['Fila','Fila -drawer -toggle']}
+Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
 " }}}项目文件浏览
 
 " 补全{{{
