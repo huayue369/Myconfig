@@ -16,12 +16,6 @@ set fileformats=unix,dos,mac
 set sessionoptions+=globals
 " }}} encoding（编码）
 
-" 代码折叠{{{
-set foldenable 
-set foldmethod=manual
-set foldlevelstart=99
-" }}}代码折叠
-
 " 真色彩支持{{{
 set termguicolors
 " }}}真色彩支持

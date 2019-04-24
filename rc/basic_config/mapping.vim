@@ -7,18 +7,14 @@ noremap <Leader><S-Tab> :Bonly!<CR>
 noremap <C-tab> :tabnew split<CR>
 " }}}TAB Brffer操作
 
-" 切换换到当前文件目录{{{
-nnoremap <silent> <leader>. :cd %:p:h<CR>
-" }}}切换换到当前文件目录
-
 " mark标签预览{{{
 nnoremap <leader>m :marks<cr>
 " }}}mark标签预览
 
 " 系统寄存器粘贴复制键{{{
-nmap <A-v> "+gp
-vmap <A-v> "+gp
-vmap <A-y> "+y
+nmap <C-p> "+gp
+vmap <C-p> "+gp
+vmap <C-y> "+y
 " }}}系统寄存器粘贴复制键
 
 " esc优化{{{

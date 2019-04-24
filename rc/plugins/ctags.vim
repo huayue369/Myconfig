@@ -8,7 +8,7 @@ endfunction
 " 启用悬浮窗预览
 let g:vista_echo_cursor_strategy ='floating_win'
 " 侧边栏宽度.
-let g:vista_sidebar_width = 30
+let g:vista_sidebar_width = 35
 " 设置为0，以禁用光标移动时的回显.
 let g:vista_echo_cursor = 1
 " 当前游标上显示详细符号信息的时间延迟.
@@ -25,16 +25,11 @@ let g:vista#renderer#icons = {
 \   "function": "\uf30b",
 \   "variable": "\uf5c0",
 \  }
-" 展示样式
+" 标签树展开样式
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
-" Executive used when opening vista sidebar without specifying it.
-" Avaliable: 'coc', 'ctags'. 'ctags' by default.
-" 优先选择lsp作为标签来源，其次ctags
-"let g:vista_cpp_executive = 'vim_lsp'
-let g:vista_default_executive = 'ctags'
-" 启用fzf的预览窗口
-let g:vista_fzf_preview = ['right:50%']
 let g:vista_finder_alternative_executives = ['coc']
+" 优先使用lsp作为标签源
+let g:vista_cpp_executive = 'vim_lsp'
 "}}}vista配置
 
 "gutentags配置{{{
@@ -69,5 +64,5 @@ let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 " 如果使用 universal ctags 需要增加下面一行
 let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 " 禁用 gutentags 自动加载 gtags 数据库的行为
-let g:gutentags_auto_add_gtags_cscope = 0
+"let g:gutentags_auto_add_gtags_cscope = 0
 "}}}gutentags配置

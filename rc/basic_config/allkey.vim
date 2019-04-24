@@ -45,7 +45,7 @@ nmap P <plug>(YoinkPaste_P)
 "}}}svermeulen/vim-yoink
 
 "liuchengxu/vista.vim{{{
-nnoremap <leader>ti :Vista!!<CR>
+nnoremap <leader>ti :Vista coc<CR>
 "}}}liuchengxu/vista.vim
 
 "Konfekt/FastFold{{{

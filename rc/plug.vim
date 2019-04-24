@@ -1,13 +1,6 @@
 
 call plug#begin('~/.cache/plugged')
 
-" 主题{{{
-
-" Plug 'logico-dev/typewriter'
-Plug 'junegunn/seoul256.vim'
-"Plug 'KKPMW/sacredforest-vim'
-" }}}主题
-
 " neovim界面优化{{{
 
 " 提供图标美化
@@ -104,7 +97,8 @@ Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
 " 补全{{{
 
 " 补全引擎
-Plug 'neoclide/coc.nvim',       {'do':function('UserFuncCocSetup')}
+Plug 'neoclide/coc.nvim',       {'do':
+            \'yarn install --frozen-lockfile'}
 " 片段
 Plug 'honza/vim-snippets',      {'for':'go'}
 " }}}补全
