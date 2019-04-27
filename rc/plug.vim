@@ -19,10 +19,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'Yggdroot/hiPairs'
 " 终端强化
 Plug 'kassio/neoterm'  
-" 粘贴强化
-Plug 'svermeulen/vim-yoink'
-" 删除优化
-Plug 'svermeulen/vim-cutlass'
 " 多光标操作
 Plug 'mg979/vim-visual-multi'
 " 快速注释文本
@@ -74,8 +70,6 @@ Plug 'iamcco/git-p.nvim'
 Plug 'junegunn/goyo.vim',       {'on':'Goyo'}
 " 配合Goyo提供更好的关灯效果
 Plug 'junegunn/limelight.vim',  {'on':'Goyo'}
-" 实现plug自身管理
-Plug 'junegunn/vim-plug'
 " 模糊搜索🔍️
 Plug 'junegunn/fzf.vim'
 " 代码对齐
@@ -88,7 +82,7 @@ Plug 'junegunn/vim-easy-align', {'on':'<plug>(EasyAlign)'}
 Plug 'ludovicchabant/vim-gutentags'
 " ctags树浏览
 Plug 'liuchengxu/vista.vim',    {'on':'Vista!!'}
-" 文件更改历史浏览
+" 历史浏览tree
 Plug 'mbbill/undotree',         {'on':'UndotreeToggle'}
 " 文件树浏览
 Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
@@ -99,8 +93,6 @@ Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
 " 补全引擎
 Plug 'neoclide/coc.nvim',       {'do':
             \'yarn install --frozen-lockfile'}
-" 片段
-Plug 'honza/vim-snippets',      {'for':'go'}
 " }}}补全
 
 " 语法{{{
@@ -108,7 +100,7 @@ Plug 'honza/vim-snippets',      {'for':'go'}
 " 代码格式化
 Plug 'sbdchd/neoformat',        {'on':'Neoformat'}
 " 语法检查
-Plug 'neomake/neomake',         {'for':'go'}
+Plug 'neomake/neomake',         {'on':'Neomake'}
 " golang支持
 Plug 'fatih/vim-go',            {'for':'go'}
 " 各种语言支持

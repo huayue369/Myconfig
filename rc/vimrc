@@ -17,7 +17,7 @@ function! s:source_rc(path, ...) abort
   let content = map(readfile(abspath),
         \ 'substitute(v:val, "^\\W*\\zsset\\ze\\W", "setglobal", "")')
 endfunction
-
+"
 " 启动时间优化{{{
 augroup MyAutoCmd
     autocmd!
@@ -57,7 +57,7 @@ call s:source_rc('/plugins/coc.vim')               " 代码补全
 call s:source_rc('/plugins/little_config.vim')     " 短配置
 call s:source_rc('/plugins/fzf.vim')               " 模糊搜索
 call s:source_rc('/plugins/git.vim')               " git配置
-call s:source_rc('/plugins/ctags.vim')             " 标签浏览
+call s:source_rc('/plugins/tags.vim')             " 标签浏览
 call s:source_rc('/plugins/markdown.vim')          " md配置
 " }}}插件配置
 "---------------------------------------------------------------------------

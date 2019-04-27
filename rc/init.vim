@@ -13,6 +13,7 @@ xnoremap ,        <Nop>
 nnoremap ;        <Nop>
 xnoremap ;        <Nop>
 nnoremap F        <Nop>
+nnoremap f        <Nop>
 " }}}全局映射
 
 " 语言模块配置{{{

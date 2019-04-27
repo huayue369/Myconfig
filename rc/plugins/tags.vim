@@ -24,6 +24,8 @@ let g:vista#renderer#enable_icon = 1
 let g:vista#renderer#icons = {
 \   "function": "\uf30b",
 \   "variable": "\uf5c0",
+\   "maps":"\uf127",
+\   "structs":"\uf1b3"
 \  }
 " 标签树展开样式
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
@@ -34,8 +36,6 @@ let g:vista_cpp_executive = 'vim_lsp'
 
 "gutentags配置{{{
 
-" 在状态行显示ctags更新情况
-"set statusline+=%{gutentags#statusline()}
 " 允许gutentags打开高级命令和选项"
 let g:gutentags_define_advanced_commands = 1
 " GTAGSLABEL 告诉 gtags 默认 C/C++/Java 等六种原生支持的代码直接使用 gtags
@@ -63,6 +63,8 @@ let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 " 如果使用 universal ctags 需要增加下面一行
 let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
+" 生成一个反向索引
+let g:gutentags_cscope_build_inverted_index = 1
 " 禁用 gutentags 自动加载 gtags 数据库的行为
 "let g:gutentags_auto_add_gtags_cscope = 0
 "}}}gutentags配置

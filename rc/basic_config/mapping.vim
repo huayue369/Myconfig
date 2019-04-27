@@ -12,9 +12,9 @@ nnoremap <leader>m :marks<cr>
 " }}}mark标签预览
 
 " 系统寄存器粘贴复制键{{{
-nmap <C-p> "+gp
-vmap <C-p> "+gp
-vmap <C-y> "+y
+nmap <A-v> "+gp
+vmap <A-v> "+gp
+vmap <A-c> "+y
 " }}}系统寄存器粘贴复制键
 
 " esc优化{{{

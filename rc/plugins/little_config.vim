@@ -39,8 +39,11 @@ function! g:BuffetSetCustomColors()
     hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#EEAD0E guifg=#000000
     hi! BuffetActiveBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#EEAD0E guifg=#000000
     hi!  BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
-   endfunction
+    hi!  BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
+endfunction
 let g:buffet_tab_icon = "\uf00a"
+let g:buffet_left_trunc_icon = "\uf0a8"
+let g:buffet_right_trunc_icon = "\uf0a9"
 let g:buffet_use_devicons = 1
 " }}}bagrat/vim-buffet
 
@@ -49,15 +52,6 @@ let g:VM_default_mappings = 0
 let g:VM_cmdheight = 3
 let g:VM_theme = 'pray' " 主题
 " }}}mg979/vim-visual-multi
-
-" svermeulen/vim-yoink{{{
-let g:yoinkSwapClampAtEnds = 0
-let g:yoinkMoveCursorToEndOfPaste = 1  " 复制完后光标停在末尾"
-let g:yoinkAutoFormatPaste = 1         " 自动格式化复制内容
-let g:yoinkSyncNumberedRegisters = 1
-let g:yoinkIncludeDeleteOperations = 1 " cutlass整合
-let g:yoinkSavePersistently = 1        " neovimi"shada"支持
-" }}}svermeulen/vim-yoink
 
 " Konfekt/FastFold{{{
 let g:fastfold_force = 1

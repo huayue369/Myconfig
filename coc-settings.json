@@ -14,6 +14,7 @@
   "diagnostic.highlightOffset": 100,
   "diagnostic.refreshOnInsertMode": true, // 插入模式刷新
   // suggest(补全选项)
+  "suggest.enablePreview": true,          //弹出预览窗口
   "suggest.triggerCompletionWait": 50,
   "suggest.minTriggerInputLength": 2,     // 触发补全字符数
   "suggest.snippetIndicator": "🌟",       // 代码片段标识
@@ -23,6 +24,7 @@
   "suggest.triggerAfterInsertEnter": true, // 插入模式触发自动补全  
   "suggest.detailMaxLength": 30,
   "suggest.preferCompleteThanJumpPlaceholder": false,
+  // snippet(补全片段)
   // languageserver(语言服务器)
   "languageserver": {
   "golang": {
