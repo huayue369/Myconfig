@@ -48,8 +48,9 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
 
 " 状态栏设置{{{
 set statusline=\ 🌈️\-\%n-\ \🌺\🌺\%F\[%M]\🌺\ 💐\%y\💐\ \%r\ \
-            \%{NearestMethodOrFunction()}
-            \%{gutentags#statusline()}
+            \%{coc#status()}
+            \\%{NearestMethodOrFunction()}
+            \\%{gutentags#statusline()}
             \\%=\ \%L\|\%p\%%\🌹\%{&ff}\🌼\[%l:%c]\🌹
 " }}}状态栏设置
 

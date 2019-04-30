@@ -50,14 +50,14 @@ filetype plugin indent on
 "}}}开启文件检测功能
 
 " 插件配置{{{
-call s:source_rc('/plugins/Language_Settings.vim') " 编程语言设置
+call s:source_rc('/plugins/Language_Settings.vim') " 语言设置
 call s:source_rc('/plugins/File_management.vim')   " 文件树
 call s:source_rc('/plugins/neomake.vim')           " 语法检查
 call s:source_rc('/plugins/coc.vim')               " 代码补全
 call s:source_rc('/plugins/little_config.vim')     " 短配置
 call s:source_rc('/plugins/fzf.vim')               " 模糊搜索
 call s:source_rc('/plugins/git.vim')               " git配置
-call s:source_rc('/plugins/tags.vim')             " 标签浏览
+call s:source_rc('/plugins/tags.vim')              " 标签浏览
 call s:source_rc('/plugins/markdown.vim')          " md配置
 " }}}插件配置
 "---------------------------------------------------------------------------

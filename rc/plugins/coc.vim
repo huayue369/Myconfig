@@ -34,7 +34,9 @@ if has("autocmd") && exists("+omnifunc")
         \		setlocal omnifunc=syntaxcomplete#Complete |
         \	endif
 endif
-
+" 括号自动换行缩进
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 " ------------------------------------------------------------------
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.

@@ -2,6 +2,10 @@
 " 插件短配置
 " -----------
 
+" voldikss/vim-translate-me{{{
+let g:tm_popup_window = 'floating'
+" }}}voldikss/vim-translate-me
+
 " sbdchd/neoformat{{{
 let b:neoformat_basic_format_align = 1 " 启用对齐
 let g:neoformat_try_formatprg = 1      " 使用formatprg作为格式化程序

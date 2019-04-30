@@ -21,11 +21,6 @@ Plug 'Yggdroot/hiPairs'
 Plug 'kassio/neoterm'  
 " 多光标操作
 Plug 'mg979/vim-visual-multi'
-" 快速注释文本
-Plug 'scrooloose/nerdcommenter', 
-            \{'on':['<Plug>NERDCommenterSexy',
-            \'<Plug>NERDCommenterUncomment',
-            \'<Plug>NERDCommenterToggle']}
 " 平滑滚动
 Plug 'yuttie/comfortable-motion.vim'
 " 自动解决粘贴文本格式乱问题
@@ -38,6 +33,19 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-surround'
 " .重复插件操作
 Plug 'tpope/vim-repeat'
+" 异步划词翻译
+Plug 'voldikss/vim-translate-me',
+            \{'on':['<Plug>Translate',
+            \'<Plug>TranslateV',
+            \'<Plug>TranslateW',
+            \'<Plug>TranslateWV',
+            \'<Plug>TranslateR',
+            \'<Plug>TranslateRV']}
+" 快速注释文本
+Plug 'scrooloose/nerdcommenter', 
+            \{'on':['<Plug>NERDCommenterSexy',
+            \'<Plug>NERDCommenterUncomment',
+            \'<Plug>NERDCommenterToggle']}
 " }}}操作强化
 
 " Dish文档支持

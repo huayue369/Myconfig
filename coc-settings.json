@@ -1,5 +1,6 @@
 {
   // coc preferences(首选项)
+  "coc.preferences.hoverTarget":"float",
   "coc.preferences.formatOnType":true,
   "coc.preferences.snippets.enable": true,   // 启用片段
   "coc.preferences.snippetStatusText": "🌈", // 片段文本状态

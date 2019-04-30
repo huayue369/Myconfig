@@ -2,6 +2,17 @@
 "按键映射
 "-----------
 
+" voldikss/vim-translate-me{{{
+" 普通模式翻译光标下的文本，在窗口中显示翻译内容
+nmap <silent> <localleader>w <Plug>TranslateW
+" 可视模式翻译光标下的文本，在窗口中显示翻译内容
+vmap <silent> <localleader>w <Plug>TranslateWV
+" 普通模式替换光标下的文本为翻译内容
+nmap <silent> <localleader>r <Plug>TranslateR
+" 可视模式替换光标下的文本为翻译内容
+vmap <silent> <localleader>r <Plug>TranslateRV
+" }}}voldikss/vim-translate-me
+
 " scrooloose/nerdcommenter{{{
 nmap <Leader>cs <Plug>NERDCommenterSexy
 nmap <Leader>cu <Plug>NERDCommenterUncomment
@@ -84,8 +95,16 @@ nnoremap <silent> <localleader>e  :<C-u>CocList extensions<cr>
 nnoremap <silent> <localleader>c  :<C-u>CocList commands<cr>
 " 搜索符号 
 nnoremap <silent> <localleader>s  :<C-u>CocList -I symbols<cr>
-" 跳转到引用位置
-nmap <silent> <leader>] <Plug>(coc-references)
 " 复制粘贴
 nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>
+" 跳转到引用位置
+nmap <silent> <A-[> <Plug>(coc-references)
+" 跳转到定义位置
+nmap <silent> <A-]> <Plug>(coc-definition)
+" 跳转到实现位置
+nmap <silent> <A--> <Plug>(coc-implementation)
+" 跳转到类型定义位置
+nmap <silent> <A-=> <Plug>(coc-type-definition)
+" 跳转到申明位置
+nmap <silent> <A-\> <Plug>(coc-declaration)
 "}}}neoclide/coc.nvim
