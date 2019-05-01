@@ -3,7 +3,8 @@
 " -----------
 
 " voldikss/vim-translate-me{{{
-let g:tm_popup_window = 'floating'
+let g:tm_popup_window = 'floating' " 使用悬浮窗浏览结果
+let g:vtm_default_mapping = 0      " 禁用默认按键
 " }}}voldikss/vim-translate-me
 
 " sbdchd/neoformat{{{
@@ -107,14 +108,12 @@ let g:NERDCompactSexyComs = 1
 function! StartifyEntryFormat()
     return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
 endfunction
-" }}}mhinz/vim-startify
-
-" mhinz/vim-startify{{{
-autocmd User Startified setlocal buflisted
-let g:startify_change_to_dir = 1
+autocmd User Startified setlocal buflisted " 解决出现共白buffers
+let g:startify_change_to_dir = 1           " 打开文件切换到该目录
 let g:startify_fortune_use_unicode = 0
-let g:startify_padding_left = 5
+let g:startify_padding_left = 5            " 左边间距
 let g:startify_session_sort = 0
+let g:startify_update_oldfiles = 1         " 实时更新记录
 " }}}mhinz/vim-startify
 "
 " junegunn/goyo.vim{{{

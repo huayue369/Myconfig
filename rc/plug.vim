@@ -27,17 +27,13 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'ConradIrwin/vim-bracketed-paste'
 " 仅在折叠时更新折叠
 Plug 'Konfekt/FastFold'
-" 增强文本操作
-Plug 'wellle/targets.vim'
 " 符号对增删该
 Plug 'tpope/vim-surround'
 " .重复插件操作
 Plug 'tpope/vim-repeat'
 " 异步划词翻译
 Plug 'voldikss/vim-translate-me',
-            \{'on':['<Plug>Translate',
-            \'<Plug>TranslateV',
-            \'<Plug>TranslateW',
+            \{'on':['<Plug>TranslateW',
             \'<Plug>TranslateWV',
             \'<Plug>TranslateR',
             \'<Plug>TranslateRV']}
@@ -113,8 +109,6 @@ Plug 'neomake/neomake',         {'on':'Neomake'}
 Plug 'fatih/vim-go',            {'for':'go'}
 " 各种语言支持
 Plug 'sheerun/vim-polyglot',    {'for':['go','py']}
-" md语法加强
-Plug 'tpope/vim-markdown',      {'for':['markdown','md']}
 " md预览
 Plug 'iamcco/markdown-preview.nvim'
             \,{'do':'cd app&yarn install','for':['markdown','md']}

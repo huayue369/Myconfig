@@ -14,7 +14,7 @@ set completeopt+=noinsert,menuone,noselect
 " floating window
 let g:coc_force_debug = 1
 " 自动检查并安装插件
-call coc#add_extension('coc-json', 'coc-syntax', 'coc-tag','coc-snippets','coc-gocode','coc-highlight','coc-pairs','coc-yaml','coc-yank')
+call coc#add_extension('coc-json', 'coc-syntax', 'coc-tag','coc-snippets','coc-gocode','coc-highlight','coc-pairs','coc-yaml','coc-yank','coc-tsserver','coc-tslint-plugin')
 " 获得正确的注释高亮显示
 autocmd FileType json syntax match Comment +\/\/.\+$+
 " 在光标保持器上突出显示光标下的符号

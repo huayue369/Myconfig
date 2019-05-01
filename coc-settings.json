@@ -6,8 +6,6 @@
   "coc.preferences.snippetStatusText": "🌈", // 片段文本状态
   "coc.preferences.currentFunctionSymbolAutoUpdate": true, 
   // diagnostic(诊断)
-  "diagnostic.infoSign": "ღ",
-  "diagnostic.hintSign": "ஐ",
   "diagnostic.warningSign": "⚠",
   "diagnostic.errorSign": "✖",
   "diagnostic.enable": true,
@@ -25,7 +23,9 @@
   "suggest.triggerAfterInsertEnter": true, // 插入模式触发自动补全  
   "suggest.detailMaxLength": 30,
   "suggest.preferCompleteThanJumpPlaceholder": false,
-  // snippet(补全片段)
+  // tslint
+  "tslint.jsEnable": true,
+  "tslint.autoFixOnSave": true,
   // languageserver(语言服务器)
   "languageserver": {
   "golang": {
@@ -36,4 +36,3 @@
     }
     }
 }
-  //linters 

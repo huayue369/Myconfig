@@ -8,8 +8,6 @@ let g:maplocalleader=';'
 " 禁用neovim默认按键映射
 nnoremap <Space>  <Nop>
 xnoremap <Space>  <Nop>
-nnoremap ,        <Nop>
-xnoremap ,        <Nop>
 nnoremap ;        <Nop>
 xnoremap ;        <Nop>
 nnoremap F        <Nop>
@@ -47,7 +45,7 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
 " }}}光标闪烁✨️
 
 " 状态栏设置{{{
-set statusline=\ 🌈️\-\%n-\ \🌺\🌺\%F\[%M]\🌺\ 💐\%y\💐\ \%r\ \
+set statusline=\ 🌈️\-\%n-\ \ %{WebDevIconsGetFileTypeSymbol()}\%F\[%M]\ 💐\%y\💐\ \%r\ \
             \%{coc#status()}
             \\%{NearestMethodOrFunction()}
             \\%{gutentags#statusline()}

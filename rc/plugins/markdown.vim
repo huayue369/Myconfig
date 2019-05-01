@@ -18,20 +18,3 @@ let g:mkdp_preview_options = {
 "let $NVIM_MKDP_LOG_FILE = expand('~/mkdp.log')
 "let $NVIM_MKDP_LOG_LEVEL = 'debug'
 "}}}markdown-preview
-
-"vim-markdown.vim{{{
-let g:markdown_syntax_conceal = 0
-let g:markdown_minlines = 100
-let g:markdown_fenced_languages =[
-                  \ 'html',
-                  \ 'go',
-                  \ 'bash=sh',
-                  \ 'css',
-                  \ 'javascript',
-                  \ 'js=javascript',
-                  \ 'typescript',
-                  \ 'awk',
-                  \ 'lua',
-                  \ 'stylus'
-                  \]
-"}}}vim-markdown.vim
