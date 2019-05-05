@@ -44,6 +44,7 @@ set splitright
 set virtualedit=onemore  " 允许光标超出最后一个字符
 set shada=!,'100,<50,s10 " 防止neovim向shada写入过多代码拖慢启动速度
 set relativenumber       " 相对行
+set number
 set noswapfile           " 不产生交换文件
 set confirm
 "}}}基本
@@ -83,6 +84,7 @@ set completeopt-=preview
 set noshowmode
 "set noshowcmd
 set showcmd
+set cmdheight=2 " 命令行高度2格
 set laststatus=2
 " }}} 状态栏
 

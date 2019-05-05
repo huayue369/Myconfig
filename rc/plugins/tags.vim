@@ -29,9 +29,12 @@ let g:vista#renderer#icons = {
 \  }
 " 标签树展开样式
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+" coc作为备选tag源
 let g:vista_finder_alternative_executives = ['coc']
 " 优先使用lsp作为标签源
 let g:vista_cpp_executive = 'vim_lsp'
+" 和fzf共享tag文件，防止fzf单独生成tag源
+let g:vista_fzf_preview = ['right:50%']
 "}}}vista配置
 
 "gutentags配置{{{

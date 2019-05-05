@@ -3,13 +3,14 @@
 "-----------
 
 " voldikss/vim-translate-me{{{
-" 普通模式翻译光标下的文本，在窗口中显示翻译内容
+" 翻译光标下的文本，在命令行回显翻译内容
+nmap <silent> <localleader>d <Plug>Translate
+vmap <silent> <localleader>d <Plug>TranslateV
+" 翻译光标下的文本，在窗口中显示翻译内容
 nmap <silent> <localleader>w <Plug>TranslateW
-" 可视模式翻译光标下的文本，在窗口中显示翻译内容
 vmap <silent> <localleader>w <Plug>TranslateWV
-" 普通模式替换光标下的文本为翻译内容
+" 替换光标下的文本为翻译内容
 nmap <silent> <localleader>r <Plug>TranslateR
-" 可视模式替换光标下的文本为翻译内容
 vmap <silent> <localleader>r <Plug>TranslateRV
 " }}}voldikss/vim-translate-me
 
@@ -27,7 +28,8 @@ noremap <silent> <leader>gl :Goyo<CR>
 " junegunn/goyo.vim
 
 " sbdchd/neoformat{{{
-noremap <silent> <leader>tm :Neoformat<cr>
+nmap <silent> <leader>tm :Neoformat<cr>
+vmap <silent> <leader>tm :Neoformat<cr>
 " }}}sbdchd/neoformat
 
 " kassio/neoterm{{{
@@ -45,20 +47,17 @@ nnoremap <leader>tc :Vista coc<CR>
 
 "Konfekt/FastFold{{{
 nmap zuz <Plug>(FastFoldUpdate)
+xnoremap iz :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zv[z<cr>
 "}}}Konfekt/FastFold
 
 "junegunn/vim-easy-align{{{
 xmap ga <Plug>(EasyAlign)
-nnoremap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 "}}} junegunn/vim-easy-align
 
-"mbbill/undotree{{{
-function g:Undotree_CustomMap()
-        nmap <buffer> J <plug>UndotreeNextState
-        nmap <buffer> K <plug>UndotreePreviousState
-endfunc
-nnoremap <leader>tu :UndotreeToggle<CR>
-"}}}mbbill/undotree
+"imnalamburt/vim-mundo{{{
+nnoremap <leader>tu :MundoToggle<CR>
+"}}}simnalamburt/vim-mundo
 
 "junegunn/fzf.vim{{{
 " 搜索所有命令
@@ -82,6 +81,9 @@ nmap f <Plug>(easymotion-overwin-f)
 nmap F <Plug>(easymotion-bd-tl)
 "}}}easymotion/vim-easymotion
 
+" vim-go{{{
+" }}}vim-go
+
 "neoclide/coc.nvim{{{
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -95,8 +97,6 @@ nnoremap <silent> <localleader>e  :<C-u>CocList extensions<cr>
 nnoremap <silent> <localleader>c  :<C-u>CocList commands<cr>
 " 搜索符号 
 nnoremap <silent> <localleader>s  :<C-u>CocList -I symbols<cr>
-" 复制粘贴
-nnoremap <silent> <leader>y  :<C-u>CocList -A --normal yank<cr>
 " 跳转到引用位置
 nmap <silent> <A-[> <Plug>(coc-references)
 " 跳转到定义位置

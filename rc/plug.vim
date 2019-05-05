@@ -1,4 +1,3 @@
-
 call plug#begin('~/.cache/plugged')
 
 " neovim界面优化{{{
@@ -23,8 +22,6 @@ Plug 'kassio/neoterm'
 Plug 'mg979/vim-visual-multi'
 " 平滑滚动
 Plug 'yuttie/comfortable-motion.vim'
-" 自动解决粘贴文本格式乱问题
-Plug 'ConradIrwin/vim-bracketed-paste'
 " 仅在折叠时更新折叠
 Plug 'Konfekt/FastFold'
 " 符号对增删该
@@ -33,7 +30,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 " 异步划词翻译
 Plug 'voldikss/vim-translate-me',
-            \{'on':['<Plug>TranslateW',
+            \{'on':['<Plug>TranslateV',
+            \'<Plug>Translate',
+            \'<Plug>TranslateW',
             \'<Plug>TranslateWV',
             \'<Plug>TranslateR',
             \'<Plug>TranslateRV']}
@@ -43,9 +42,6 @@ Plug 'scrooloose/nerdcommenter',
             \'<Plug>NERDCommenterUncomment',
             \'<Plug>NERDCommenterToggle']}
 " }}}操作强化
-
-" Dish文档支持
-Plug 'rizzatti/dash.vim',       {'on':'Dish'}
 
 " 快速移动{{{
 
@@ -70,6 +66,8 @@ Plug 'iamcco/git-p.nvim'
 
 " junegunn大神套装{{{
 
+" 寄存器面板
+Plug 'junegunn/vim-peekaboo'
 " 提供关灯效果，方便阅读代码
 Plug 'junegunn/goyo.vim',       {'on':'Goyo'}
 " 配合Goyo提供更好的关灯效果
@@ -88,13 +86,14 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'liuchengxu/vista.vim',    {'on':'Vista!!'}
 " 历史浏览tree
 Plug 'mbbill/undotree',         {'on':'UndotreeToggle'}
+Plug 'simnalamburt/vim-mundo',  {'on':'MundoToggle'}
 " 文件树浏览
 Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
 " }}}项目文件浏览
 
 " 补全{{{
 
-" 补全引擎
+" 补全引擎 /从源码安装
 Plug 'neoclide/coc.nvim',       {'do':
             \'yarn install --frozen-lockfile'}
 " }}}补全

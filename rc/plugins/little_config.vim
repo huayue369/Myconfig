@@ -46,7 +46,8 @@ function! g:BuffetSetCustomColors()
     hi!  BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
     hi!  BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
 endfunction
-let g:buffet_tab_icon = "\uf00a"
+let g:buffet_separator = ""
+let g:buffet_tab_icon = "\uf00a 💋️"
 let g:buffet_left_trunc_icon = "\uf0a8"
 let g:buffet_right_trunc_icon = "\uf0a9"
 let g:buffet_use_devicons = 1
@@ -74,16 +75,11 @@ let g:EasyMotion_use_smartsign_us = 1
 " }}}easymotion/vim-easymotion
 
 " simnalamburt/vim-mundo{{{
-let g:undotree_HelpLine = 0           " 不显示帮助信息
-let g:undotree_RelativeTimestamp = 0  " 时间格式选择
-let g:undotree_SetFocusWhenToggle = 1 " 光标聚焦undo
-let g:undotree_DiffpanelHeight = 15   " 差异窗口比例
-let g:undotree_SplitWidth = 35        " 显示区比例"
-let g:undotree_WindowLayout = 3       " 窗口风格
-if has("persistent_undo")
-    set undodir=~/.cache/.undodir"
-    set undofile
-endif
+let g:mundo_return_on_revert = 0 " 恢复后将焦点保持在Mundo窗口中
+let g:mundo_inline_undo = 1 
+let g:mundo_right = 1 " 右侧显示
+set undofile
+set undodir=/Users/lijia/.cache/undo
 " }}}simnalamburt/vim-mundo
 
 " Yggdroot/hiPairs{{{
@@ -108,7 +104,7 @@ let g:NERDCompactSexyComs = 1
 function! StartifyEntryFormat()
     return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
 endfunction
-autocmd User Startified setlocal buflisted " 解决出现共白buffers
+autocmd User Startified setlocal buflisted " 解决出现空白buffers
 let g:startify_change_to_dir = 1           " 打开文件切换到该目录
 let g:startify_fortune_use_unicode = 0
 let g:startify_padding_left = 5            " 左边间距

@@ -58,7 +58,6 @@ call s:source_rc('/plugins/little_config.vim')     " 短配置
 call s:source_rc('/plugins/fzf.vim')               " 模糊搜索
 call s:source_rc('/plugins/git.vim')               " git配置
 call s:source_rc('/plugins/tags.vim')              " 标签浏览
-call s:source_rc('/plugins/markdown.vim')          " md配置
 " }}}插件配置
 "---------------------------------------------------------------------------
 
