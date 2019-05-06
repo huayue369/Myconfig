@@ -47,16 +47,16 @@ function! g:BuffetSetCustomColors()
     hi!  BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
 endfunction
 let g:buffet_separator = ""
-let g:buffet_tab_icon = "\uf00a 💋️"
+let g:buffet_tab_icon = "|\uf00a  💋️"
 let g:buffet_left_trunc_icon = "\uf0a8"
 let g:buffet_right_trunc_icon = "\uf0a9"
 let g:buffet_use_devicons = 1
 " }}}bagrat/vim-buffet
 
 " mg979/vim-visual-multi{{{
-let g:VM_default_mappings = 0
+let g:VM_default_mappings = 0 " 禁用所有按键
 let g:VM_cmdheight = 3
-let g:VM_theme = 'pray' " 主题
+let g:VM_theme = 'pray'       " 主题
 " }}}mg979/vim-visual-multi
 
 " Konfekt/FastFold{{{

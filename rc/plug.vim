@@ -4,7 +4,7 @@ call plug#begin('~/.cache/plugged')
 
 " 提供图标美化
 Plug 'ryanoasis/vim-devicons'
-" 启动界面
+" 主题界面
 Plug 'mhinz/vim-startify'
 " tabline插件
 Plug 'bagrat/vim-buffet'
@@ -66,14 +66,14 @@ Plug 'iamcco/git-p.nvim'
 
 " junegunn大神套装{{{
 
+" 模糊搜索🔍️
+Plug 'junegunn/fzf.vim'
 " 寄存器面板
 Plug 'junegunn/vim-peekaboo'
 " 提供关灯效果，方便阅读代码
 Plug 'junegunn/goyo.vim',       {'on':'Goyo'}
 " 配合Goyo提供更好的关灯效果
 Plug 'junegunn/limelight.vim',  {'on':'Goyo'}
-" 模糊搜索🔍️
-Plug 'junegunn/fzf.vim'
 " 代码对齐
 Plug 'junegunn/vim-easy-align', {'on':'<plug>(EasyAlign)'}
 " }}}junegunn大神套装
@@ -96,6 +96,8 @@ Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
 " 补全引擎 /从源码安装
 Plug 'neoclide/coc.nvim',       {'do':
             \'yarn install --frozen-lockfile'}
+" 代码片段源
+Plug 'honza/vim-snippets',      {'for':'go'}
 " }}}补全
 
 " 语法{{{
