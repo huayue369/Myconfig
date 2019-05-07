@@ -49,6 +49,9 @@ set noswapfile           " 不产生交换文件
 set confirm
 "}}}基本
 
+" 折叠{{{
+set foldmethod=indent
+" }}}折叠
 " mouse {{{
 set mouse+=a
 set mousehide
@@ -60,7 +63,7 @@ set noerrorbells
 set novisualbell
 set t_vb=
 " }}} 关闭错误响铃🔔️
-"
+
 " tab补全菜单选项{{{
 set pumblend=20
 set wildoptions=pum
@@ -84,8 +87,8 @@ set completeopt-=preview
 set noshowmode
 "set noshowcmd
 set showcmd
-set cmdheight=2 " 命令行高度2格
-set laststatus=2
+"set cmdheight=2 " 命令行高度2格
+"set laststatus=3
 " }}} 状态栏
 
 " match {{{
@@ -96,7 +99,7 @@ set ignorecase
 
 " spaceline {{{
 set list
-set listchars=tab:›\ ,trail:-,extends:#,nbsp:.
+"set listchars=tab:›\ ,trail:-,extends:#,nbsp:.
 " }}} spaceline
 
 " syntax {{{

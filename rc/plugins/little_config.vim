@@ -40,11 +40,11 @@ noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 
 " bagrat/vim-buffet{{{
 function! g:BuffetSetCustomColors()
-    hi! BuffetTab cterm=NONE ctermbg=5 ctermfg=8 guibg=#FF6A6A guifg=#000000
-    hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#EEAD0E guifg=#000000
-    hi! BuffetActiveBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#EEAD0E guifg=#000000
-    hi!  BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
-    hi!  BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#CDC0B0 guifg=#000000
+    hi! BuffetTab cterm=NONE ctermbg=5 ctermfg=8 guibg=#8E388E guifg=#000000
+    hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#E0FFFF guifg=#000000
+    hi! BuffetActiveBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#E0FFFF guifg=#000000
+    hi!  BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#4D4D4D guifg=#000000
+    hi!  BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#4D4D4D guifg=#000000
 endfunction
 let g:buffet_separator = ""
 let g:buffet_tab_icon = "|\uf00a  💋️"
@@ -58,13 +58,6 @@ let g:VM_default_mappings = 0 " 禁用所有按键
 let g:VM_cmdheight = 3
 let g:VM_theme = 'pray'       " 主题
 " }}}mg979/vim-visual-multi
-
-" Konfekt/FastFold{{{
-let g:fastfold_force = 1
-let g:fastfold_savehook = 1
-let g:fastfold_fold_command_suffixes =['x','X','a','A','o','O','c','C','r','R','m','M','i','n','N']
-let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
-" }}}Konfekt/FastFold
 
 " easymotion/vim-easymotion{{{
 let g:EasyMotion_do_mapping = 0

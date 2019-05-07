@@ -45,11 +45,6 @@ nnoremap <leader>tv :Vista!!<CR>
 nnoremap <leader>tc :Vista coc<CR>
 "}}}liuchengxu/vista.vim
 
-"Konfekt/FastFold{{{
-nmap zuz <Plug>(FastFoldUpdate)
-xnoremap iz :<c-u>FastFoldUpdate<cr><esc>:<c-u>normal! ]zv[z<cr>
-"}}}Konfekt/FastFold
-
 "junegunn/vim-easy-align{{{
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
@@ -90,8 +85,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Use tab for trigger completion with characters ahead and navigate
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " 滚动悬浮窗口
-nnoremap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "\<C-f>"
-nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-b>"
+nmap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "\<C-f>"
+nmap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-b>"
 " 显示所有诊断
 nnoremap <silent> <localleader>a  :<C-u>CocList diagnostics<cr>
 " 显示所有插件扩展 
@@ -101,18 +96,18 @@ nnoremap <silent> <localleader>c  :<C-u>CocList commands<cr>
 " 搜索符号 
 nnoremap <silent> <localleader>s  :<C-u>CocList -I symbols<cr>
 " 跳转到引用位置
-nnoremap <silent> <A-[> <Plug>(coc-references)
+nmap <silent> <A-[> <Plug>(coc-references)
 " 跳转到定义位置
-nnoremap <silent> <A-]> <Plug>(coc-definition)
+nmap <silent> <A-]> <Plug>(coc-definition)
 " 跳转到实现位置
-nnoremap <silent> <A--> <Plug>(coc-implementation)
+nmap <silent> <A--> <Plug>(coc-implementation)
 " 跳转到类型定义位置
-nnoremap <silent> <A-=> <Plug>(coc-type-definition)
+nmap <silent> <A-=> <Plug>(coc-type-definition)
 " 跳转到申明位置
-nnoremap <silent> <A-\> <Plug>(coc-declaration)
+nmap <silent> <A-\> <Plug>(coc-declaration)
 " 格式化当前buffer
-nnoremap <silent> <localleader>fb <Plug>(coc-format)
+nmap <silent> <localleader>fb <Plug>(coc-format)
 " 格式化选中区间，可在正常和可视模式下工作
-vmap <leader>fp  <Plug>(coc-format-selected)
-nmap <leader>fp <Plug>(coc-format-selected)
+vmap <localleader>fp  <Plug>(coc-format-selected)
+nmap <localleader>fp <Plug>(coc-format-selected)
 "}}}neoclide/coc.nvim

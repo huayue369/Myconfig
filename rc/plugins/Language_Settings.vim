@@ -19,6 +19,7 @@ let g:go_highlight_extra_types = 1               " 突出常用库
 let g:go_highlight_space_tab_error = 1           " 突出的实例选项卡下面的空间
 let g:go_highlight_operators = 1                 " 突出运算符号
 let g:go_highlight_functions = 1                 " 强调功能和方法
+let g:go_highlight_function_calls = 1
 let g:go_highlight_function_parameters = 1       " 突出变量名参数
 let g:go_highlight_build_constraints = 1         " 强调建立约束
 let g:go_highlight_generate_tags = 1             " 强调生成指令
@@ -29,6 +30,8 @@ let g:go_highlight_variable_assignments = 1      " 突出显示变量名
 let g:go_highlight_format_strings = 1            " 突出printf-style字符串动词
 let g:go_highlight_variable_declarations = 1     " 强调在变量声明变量名
 let g:go_gocode_unimported_packages = 1          " 导入包的补全建议
+let g:go_highlight_structs = 1                   " 结构体
+let g:go_highlight_methods = 1
 " gocode补全
 let g:go_gocode_propose_builtins = 1    " 禁用gocode补全
 let g:go_gocode_propose_source = 1      " gocode使用源文件,不是二进制包补全建议

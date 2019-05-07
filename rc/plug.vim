@@ -14,7 +14,7 @@ Plug 'bagrat/vim-buffet'
 
 " 代码缩进指示线
 Plug 'Yggdroot/indentLine'
-" 括号高亮
+" 括号对高亮
 Plug 'Yggdroot/hiPairs'
 " 终端强化
 Plug 'kassio/neoterm'  
@@ -22,8 +22,6 @@ Plug 'kassio/neoterm'
 Plug 'mg979/vim-visual-multi'
 " 平滑滚动
 Plug 'yuttie/comfortable-motion.vim'
-" 仅在折叠时更新折叠
-Plug 'Konfekt/FastFold'
 " 符号对增删该
 Plug 'tpope/vim-surround'
 " .重复插件操作
