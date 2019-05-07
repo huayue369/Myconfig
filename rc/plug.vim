@@ -83,7 +83,6 @@ Plug 'ludovicchabant/vim-gutentags'
 " ctags树浏览
 Plug 'liuchengxu/vista.vim',    {'on':'Vista!!'}
 " 历史浏览tree
-Plug 'mbbill/undotree',         {'on':'UndotreeToggle'}
 Plug 'simnalamburt/vim-mundo',  {'on':'MundoToggle'}
 " 文件树浏览
 Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
