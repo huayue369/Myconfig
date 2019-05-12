@@ -12,12 +12,12 @@ Plug 'bagrat/vim-buffet'
 
 " 操作强化{{{
 
+" 折叠优化
+Plug 'Konfekt/FastFold'
 " 代码缩进指示线
 Plug 'Yggdroot/indentLine'
 " 括号对高亮
 Plug 'Yggdroot/hiPairs'
-" 终端强化
-Plug 'kassio/neoterm'  
 " 多光标操作
 Plug 'mg979/vim-visual-multi'
 " 平滑滚动
@@ -26,7 +26,9 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'tpope/vim-surround'
 " .重复插件操作
 Plug 'tpope/vim-repeat'
-" 异步划词翻译
+" 终端强化
+Plug 'Lenovsky/nuake', {'on':'Nuake'}
+" 异步划词翻译框架（支持各种翻译源)
 Plug 'voldikss/vim-translate-me',
             \{'on':['<Plug>TranslateV',
             \'<Plug>Translate',
@@ -85,7 +87,10 @@ Plug 'liuchengxu/vista.vim',    {'on':'Vista!!'}
 " 历史浏览tree
 Plug 'simnalamburt/vim-mundo',  {'on':'MundoToggle'}
 " 文件树浏览
-Plug 'justinmk/vim-dirvish',    {'on':'Dirvish'}
+Plug 'Shougo/defx.nvim',       
+            \{ 'do': ':UpdateRemotePlugins'}
+" defx图标
+Plug 'kristijanhusak/defx-icons'
 " }}}项目文件浏览
 
 " 补全{{{

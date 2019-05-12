@@ -2,6 +2,13 @@
 " 插件短配置
 " -----------
 
+" Konfekt/FastFold{{{
+let g:fastfold_force = 1
+let g:fastfold_savehook = 1
+let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
+let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
+" }}}Konfekt/FastFold
+
 " voldikss/vim-translate-me{{{
 let g:tm_popup_window = 'floating' " 使用悬浮窗浏览结果
 let g:vtm_default_mapping = 0      " 禁用默认按键
@@ -21,13 +28,10 @@ let g:indentLine_concealcursor = 'inc'
 let g:indentLine_conceallevel = 2
 " }}}Yggdroot/indentLine
 
-"kassio/neoterm{{{
-let &runtimepath.=',~/.cache/plugged/neoterm'
-let g:neoterm_autoinsert = 1
-let g:neoterm_autoscroll = 1
-let g:neoterm_default_mod='belowright' " 水平分割
-" let g:neoterm_default_mod='vertical'  " 垂直分割
-"}}}kassio/neoterm
+" Lenovsky/nuake{{{
+let g:nuake_per_tab = 1 " 每个标签页启用一个nuake
+let g:nuake_size = 0.45 " nuake大小
+" }}}Lenovsky/nuake
 
 " comfortable-motion{{{
 let g:comfortable_motion_friction = 80.0

@@ -20,13 +20,9 @@
     "suggest.noselect": false, // 补全开启时选中第一项
     "suggest.detailField": "abbr",
     "suggest.maxCompleteItemCount": 20,
-    "suggest.triggerAfterInsertEnter": true, // 插入模式触发自动补全  
     "suggest.detailMaxLength": 30,
     "suggest.preferCompleteThanJumpPlaceholder": false,
-    // tslint
-    "tslint.jsEnable": true,
-    "tslint.autoFixOnSave": true,
-    // languageserver(语言服务器)
+   // languageserver(语言服务器)
     "languageserver": {
         "golang": {
             "command": "gopls",

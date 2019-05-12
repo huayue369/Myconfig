@@ -2,6 +2,10 @@
 "按键映射
 "-----------
 
+" Konfekt/FastFold{{{
+nmap zuz <Plug>(FastFoldUpdate!)
+" }}}Konfekt/FastFold
+
 " voldikss/vim-translate-me{{{
 " 翻译光标下的文本，在命令行回显翻译内容
 nmap <silent> <localleader>d <Plug>Translate
@@ -32,12 +36,15 @@ nmap <silent> <leader>tm :Neoformat<cr>
 vmap <silent> <leader>tm :Neoformat<cr>
 " }}}sbdchd/neoformat
 
-" kassio/neoterm{{{
-noremap <silent> <leader>tl :botright Ttoggle<CR>
-" }}}kassio/neoterm
+" Lenovsky/nuake{{{
+nnoremap <leader>tl :Nuake<CR>
+inoremap <F4> <C-\><C-n>:Nuake<CR>
+tnoremap <F4> <C-\><C-n>:Nuake<CR>
+" }}}Lenovsky/nuake
 
 "justinmk/vim-dirvish{{{
-nnoremap <silent> <Leader>e :Dirvish<cr>
+nnoremap <silent> <Leader>e
+\ :<C-u>Defx -resume -toggle -buffer-name=tab`tabpagenr()`<CR>
 "}}}justinmk/vim-dirvish
 
 "liuchengxu/vista.vim{{{

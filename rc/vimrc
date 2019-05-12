@@ -51,7 +51,7 @@ filetype plugin indent on
 
 " 插件配置{{{
 call s:source_rc('/plugins/Language_Settings.vim') " 语言设置
-call s:source_rc('/plugins/File_management.vim')   " 文件树
+call s:source_rc('/plugins/defx.vim')   " 文件树
 call s:source_rc('/plugins/neomake.vim')           " 语法检查
 call s:source_rc('/plugins/coc.vim')               " 代码补全
 call s:source_rc('/plugins/little_config.vim')     " 短配置

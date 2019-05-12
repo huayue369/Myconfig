@@ -14,7 +14,7 @@ set completeopt+=noinsert,menuone,noselect
 " floating window
 let g:coc_force_debug = 1
 " 自动检查并安装插件
-call coc#add_extension('coc-json', 'coc-syntax', 'coc-tag','coc-snippets','coc-highlight','coc-pairs','coc-yaml','coc-tsserver','coc-tslint-plugin')
+call coc#add_extension('coc-json', 'coc-syntax', 'coc-tag','coc-snippets','coc-highlight','coc-pairs','coc-yaml')
 " 获得正确的注释高亮显示
 autocmd FileType json syntax match Comment +\/\/.\+$+
 " 在光标保持器上突出显示光标下的符号
@@ -59,6 +59,8 @@ function! s:show_documentation()
   endif
 endfunction
 " ------------------------------------------------------------------
+" 诊断标志颜色设置
+"highlight link CocErrorSign GruvboxRed
 " highlight text color
 autocmd ColorScheme * highlight! CocHighlightText  guibg=#054c20 ctermbg=023
 " do not underline error/info/hit lines

@@ -45,7 +45,7 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
 " }}}光标闪烁✨️
 
 " 状态栏设置{{{
-set statusline=\ 🌈️\-\%n-\ \ %{WebDevIconsGetFileTypeSymbol()}\%F\[%M]\ 🌸\%y\🌸\ \%r\ \
+set statusline=\ 🌐️\-\%n-\ \ %{WebDevIconsGetFileTypeSymbol()}\%F\[%M]\ 🌸\%y\🌸\ \%r\ \
             \%{coc#status()}
             \\%{NearestMethodOrFunction()}
             \\%{gutentags#statusline()}
