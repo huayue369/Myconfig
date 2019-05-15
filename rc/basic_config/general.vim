@@ -52,6 +52,7 @@ set confirm
 " 折叠{{{
 set foldmethod=indent
 " }}}折叠
+
 " mouse {{{
 set mouse+=a
 set mousehide
@@ -69,13 +70,6 @@ set pumblend=20
 set wildoptions=pum
 " }}}tab补全菜单选项
 
-" buffer {{{
-set splitbelow splitright
-set showtabline=2
-set hidden
-set switchbuf=useopen,usetab,newtab
-" }}} buffer
-
 " wildmenu {{{
 set wildmenu
 set wildignore+=*.o,*~,*.pyc,*.class,*/tmp/*,*.so,*.swp,*.zip
@@ -83,12 +77,19 @@ set completeopt=longest,menu
 set completeopt-=preview
 " }}} wildmenu
 
+" buffer {{{
+set splitbelow splitright
+"set showtabline=2
+set hidden
+set switchbuf=useopen,usetab,newtab
+" }}} buffer
+
 " 状态栏 {{{
 set noshowmode
 "set noshowcmd
 set showcmd
-"set cmdheight=2 " 命令行高度2格
-"set laststatus=3
+set cmdheight=2 " 命令行高度2格
+set laststatus=0
 " }}} 状态栏
 
 " match {{{

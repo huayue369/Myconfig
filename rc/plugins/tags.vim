@@ -69,5 +69,5 @@ let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 " 生成一个反向索引
 let g:gutentags_cscope_build_inverted_index = 1
 " 禁用 gutentags 自动加载 gtags 数据库的行为
-"let g:gutentags_auto_add_gtags_cscope = 0
+let g:gutentags_auto_add_gtags_cscope = 0
 "}}}gutentags配置

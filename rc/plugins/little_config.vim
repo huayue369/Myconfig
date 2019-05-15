@@ -2,13 +2,6 @@
 " 插件短配置
 " -----------
 
-" Konfekt/FastFold{{{
-let g:fastfold_force = 1
-let g:fastfold_savehook = 1
-let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
-let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
-" }}}Konfekt/FastFold
-
 " voldikss/vim-translate-me{{{
 let g:tm_popup_window = 'floating' " 使用悬浮窗浏览结果
 let g:vtm_default_mapping = 0      " 禁用默认按键
@@ -41,21 +34,6 @@ let g:comfortable_motion_scroll_up_key = "k"
 noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
 noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 " }}}comfortable-motion
-
-" bagrat/vim-buffet{{{
-function! g:BuffetSetCustomColors()
-    hi! BuffetTab cterm=NONE ctermbg=5 ctermfg=8 guibg=#8E388E guifg=#000000
-    hi! BuffetCurrentBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#E0FFFF guifg=#000000
-    hi! BuffetActiveBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#E0FFFF guifg=#000000
-    hi!  BuffetBuffer cterm=NONE ctermbg=5 ctermfg=8 guibg=#4D4D4D guifg=#000000
-    hi!  BuffetTrunc cterm=NONE ctermbg=5 ctermfg=8 guibg=#4D4D4D guifg=#000000
-endfunction
-let g:buffet_separator = ""
-let g:buffet_tab_icon = "|\uf00a  💋️"
-let g:buffet_left_trunc_icon = "\uf0a8"
-let g:buffet_right_trunc_icon = "\uf0a9"
-let g:buffet_use_devicons = 1
-" }}}bagrat/vim-buffet
 
 " mg979/vim-visual-multi{{{
 let g:VM_default_mappings = 0 " 禁用所有按键

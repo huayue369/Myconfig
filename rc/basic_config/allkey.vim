@@ -2,10 +2,6 @@
 "按键映射
 "-----------
 
-" Konfekt/FastFold{{{
-nmap zuz <Plug>(FastFoldUpdate!)
-" }}}Konfekt/FastFold
-
 " voldikss/vim-translate-me{{{
 " 翻译光标下的文本，在命令行回显翻译内容
 nmap <silent> <localleader>d <Plug>Translate
@@ -102,6 +98,8 @@ nnoremap <silent> <localleader>e  :<C-u>CocList extensions<cr>
 nnoremap <silent> <localleader>c  :<C-u>CocList commands<cr>
 " 搜索符号 
 nnoremap <silent> <localleader>s  :<C-u>CocList -I symbols<cr>
+" 剪贴板历史列表
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 " 跳转到引用位置
 nmap <silent> <A-[> <Plug>(coc-references)
 " 跳转到定义位置

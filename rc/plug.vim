@@ -6,14 +6,10 @@ call plug#begin('~/.cache/plugged')
 Plug 'ryanoasis/vim-devicons'
 " 主题界面
 Plug 'mhinz/vim-startify'
-" tabline插件
-Plug 'bagrat/vim-buffet'
 " }}}neovim界面优化
 
 " 操作强化{{{
 
-" 折叠优化
-Plug 'Konfekt/FastFold'
 " 代码缩进指示线
 Plug 'Yggdroot/indentLine'
 " 括号对高亮
