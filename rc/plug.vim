@@ -78,6 +78,10 @@ Plug 'junegunn/vim-easy-align', {'on':'<plug>(EasyAlign)'}
 
 " 异步自动管理ctags标签文件
 Plug 'ludovicchabant/vim-gutentags'
+" gutentags列表支持
+Plug 'skywind3000/gutentags_plus'
+" 列表预览
+Plug 'skywind3000/vim-preview'
 " ctags树浏览
 Plug 'liuchengxu/vista.vim',    {'on':'Vista!!'}
 " 历史浏览tree
@@ -106,7 +110,7 @@ Plug 'sbdchd/neoformat',        {'on':'Neoformat'}
 Plug 'neomake/neomake',         {'on':'Neomake'}
 " golang支持
 Plug 'fatih/vim-go',            {'for':'go'}
-" 各种语言支持
+" 多语言扩展
 Plug 'sheerun/vim-polyglot',    {'for':['go','py']}
 " md预览
 Plug 'iamcco/markdown-preview.nvim'

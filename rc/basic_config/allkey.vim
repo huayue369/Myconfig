@@ -2,6 +2,15 @@
 "按键映射
 "-----------
 
+" skywind3000/vim-preview{{{
+noremap <m-u> :PreviewScroll -1<cr>
+noremap <m-d> :PreviewScroll +1<cr>
+inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
+inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
+autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
+autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
+" }}}skywind3000/vim-preview
+
 " voldikss/vim-translate-me{{{
 " 翻译光标下的文本，在命令行回显翻译内容
 nmap <silent> <localleader>d <Plug>Translate
