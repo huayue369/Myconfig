@@ -14,7 +14,6 @@ set viewoptions-=options
 set fileformat=unix
 set fileformats=unix,dos,mac
 set sessionoptions+=globals
-set cscopetag                  " 使用 cscope 作为 tags 命令
 set cscopeprg='gtags-cscope'   " 使用 gtags-cscope 代替 cscope
 " }}} encoding（编码）
 
@@ -50,7 +49,8 @@ set confirm
 "}}}基本
 
 " 折叠{{{
-set foldmethod=indent
+"set foldmethod=indent
+set nofoldenable
 " }}}折叠
 
 " mouse {{{
@@ -89,7 +89,7 @@ set noshowmode
 "set noshowcmd
 set showcmd
 set cmdheight=2 " 命令行高度2格
-set laststatus=0
+set laststatus=2
 " }}} 状态栏
 
 " match {{{

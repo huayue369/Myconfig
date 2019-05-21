@@ -12,6 +12,7 @@ let g:go_auto_sameids = 1           " 高亮显示光标下的所有使用标识
 let g:go_auto_sameids = 1           " 显示光标下字符所有用法
 let g:go_auto_type_info = 1         " 显示变量类型信息
 " 强化Vim golang语法高亮功能
+let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment']
 let g:go_highlight_array_whitespace_error = 1    " 突出“[]”后空白
 let g:go_highlight_chan_whitespace_error = 1     " 突出空白接收操作符
 let g:go_highlight_trailing_whitespace_error = 1 " 突出尾随空格
@@ -33,9 +34,9 @@ let g:go_gocode_unimported_packages = 1          " 导入包的补全建议
 let g:go_highlight_structs = 1                   " 结构体
 let g:go_highlight_methods = 1
 " gocode补全
-let g:go_gocode_propose_builtins = 1    " 禁用gocode补全
+let g:go_code_completion_enabled = 0    " 0禁用代码快速完成
 let g:go_gocode_propose_source = 1      " gocode使用源文件,不是二进制包补全建议
-let g:go_gocode_propose_builtins = 1    " 开启函数常量自动完成
+let g:go_gocode_propose_builtins = 0    " 开启函数常量自动完成
 let g:go_decls_mode = 'fzf'             " 定义工具用于|:GoDecls|
 let g:go_gocode_unimported_packages = 1 " gocode”包括从unimported建议包
 " }}}vim-go

@@ -22,7 +22,7 @@
     "suggest.maxCompleteItemCount": 20,
     "suggest.detailMaxLength": 30,
     "suggest.preferCompleteThanJumpPlaceholder": false,
-   // languageserver(语言服务器)
+    // languageserver(语言服务器)
     "languageserver": {
         "golang": {
             "command": "gopls",

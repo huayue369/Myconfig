@@ -79,12 +79,17 @@ let g:gutentags_plus_switch = 1
 let g:gutentags_plus_nomap = 1
 noremap <silent> <leader>gs :GscopeFind s <C-R><C-W><cr>
 noremap <silent> <leader>gg :GscopeFind g <C-R><C-W><cr>
+" 调用此函数的函数
 noremap <silent> <leader>gc :GscopeFind c <C-R><C-W><cr>
+" 在光标下找到文本字符串
 noremap <silent> <leader>gt :GscopeFind t <C-R><C-W><cr>
+" 在光标下找到egrep模式
 noremap <silent> <leader>ge :GscopeFind e <C-R><C-W><cr>
 noremap <silent> <leader>gf :GscopeFind f <C-R>=expand("<cfile>")<cr><cr>
+" 查找包含光标下文件名的文件
 noremap <silent> <leader>gi :GscopeFind i <C-R>=expand("<cfile>")<cr><cr>
+" 这个函数调用的函数
 noremap <silent> <leader>gd :GscopeFind d <C-R><C-W><cr>
+" 查找当前符号被分配的位置
 noremap <silent> <leader>ga :GscopeFind a <C-R><C-W><cr>
 " }}}gutentags-puls
-"

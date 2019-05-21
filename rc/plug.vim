@@ -22,6 +22,8 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'tpope/vim-surround'
 " .重复插件操作
 Plug 'tpope/vim-repeat'
+" 更好用的快捷操作
+Plug 'tpope/vim-unimpaired'
 " 终端强化
 Plug 'Lenovsky/nuake', {'on':'Nuake'}
 " 异步划词翻译框架（支持各种翻译源)

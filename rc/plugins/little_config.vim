@@ -38,7 +38,7 @@ noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 " mg979/vim-visual-multi{{{
 let g:VM_default_mappings = 0 " 禁用所有按键
 let g:VM_cmdheight = 3
-let g:VM_theme = 'pray'       " 主题
+"let g:VM_theme = 'pray'       " 主题
 " }}}mg979/vim-visual-multi
 
 " easymotion/vim-easymotion{{{

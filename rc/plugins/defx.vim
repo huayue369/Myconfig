@@ -22,20 +22,33 @@ function! s:defx_my_settings() abort
 	nnoremap <silent><buffer><expr> s     defx#do_action('open', 'botright vsplit')
 	nnoremap <silent><buffer><expr> i     defx#do_action('open', 'topleft split')
     nnoremap <silent><buffer><expr> P     defx#do_action('open', 'pedit')
+    " 新建文件夹
 	nnoremap <silent><buffer><expr> K     defx#do_action('new_directory')
+    " 新建文件
 	nnoremap <silent><buffer><expr> N     defx#do_action('new_multiple_files')
+    " 删除
 	nnoremap <silent><buffer><expr> dd    defx#do_action('remove')
+    " 重命名
 	nnoremap <silent><buffer><expr> r     defx#do_action('rename')
+    " 用gui打开文件
 	nnoremap <silent><buffer><expr> x     defx#do_action('execute_system')
+    " 显示隐藏文件
 	nnoremap <silent><buffer><expr> .     defx#do_action('toggle_ignored_files')
+    " 复制路径
 	nnoremap <silent><buffer><expr> yy    defx#do_action('yank_path')
+    " 返回到上级目录
 	nnoremap <silent><buffer><expr> h     defx#do_action('cd', ['..'])
+    " cd到根目录
 	nnoremap <silent><buffer><expr> ~     defx#do_action('cd')
+    " 退出
 	nnoremap <silent><buffer><expr> q     defx#do_action('quit')
 
 	nnoremap <silent><buffer><expr><nowait> \  defx#do_action('cd', getcwd())
+    " 复制
 	nnoremap <silent><buffer><expr><nowait> c  defx#do_action('copy')
+    " 移动
 	nnoremap <silent><buffer><expr><nowait> m  defx#do_action('move')
+    " 粘贴
 	nnoremap <silent><buffer><expr><nowait> p  defx#do_action('paste')
 
 	nnoremap <silent><buffer><expr><nowait> <Space>
